@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,200,400");
+@font-face {
+  font-family: Font Awesome\ 5 Brands;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.eot);
+  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.svg#fontawesome) format("svg");
+}
+
+@font-face {
+  font-family: Font Awesome\ 5 Free;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.eot);
+  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.svg#fontawesome) format("svg");
+}
+
+@font-face {
+  font-family: Font Awesome\ 5 Free;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.eot);
+  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.svg#fontawesome) format("svg");
+}
+
+.bgnav {
+  background-color: #888888;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.bgnav a, .bgnav i {
+  color: white;
+  font-size: 1em;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  margin-top: 3px;
+}
+
+.bgnav .bgnav_span {
+  border: 1px solid white;
+  color: #888888;
+  position: relative;
+  top: 2px;
+  font-size: x-large;
+}
+
+header {
+  padding: 0 1.5rem;
+  background: white;
+}
+
+header nav.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav.menu .licorera_logo {
+  position: relative;
+  left: 115px;
+  margin: 5px 0;
+}
+
+header nav.menu .menu-left li:last-child {
+  display: none;
+}
+
+header nav.menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+header nav.menu ul a {
+  font-size: .8rem;
+}
+
+header nav.menu ul li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+header nav.menu ul ._user {
+  position: relative;
+  top: -9px;
+  font-size: 28px;
+}
+
+header .menu_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: initial;
+  -webkit-box-direction: initial;
+      -ms-flex-direction: initial;
+          flex-direction: initial;
+  font-size: 9px;
+}
+
+header .fa-bars:before {
+  border-right: 1px solid;
+  padding-right: 14px;
+}
+
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  opacity: 0.8;
+  overflow-y: auto;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.side-nav ul {
+  padding: 0;
+}
+
+.side-nav a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #ccc;
+  display: block;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.side-nav a .fa-chevron-right {
+  float: right;
+}
+
+.side-nav a .fa-chevron-down {
+  float: right;
+}
+
+.side-nav a:not(.btn-close) {
+  border-bottom: 2px solid;
+}
+
+.side-nav a.list {
+  border: none;
+  font-size: 0.8rem;
+  padding: 2px 40px;
+}
+
+.side-nav a.list.--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.side-nav a:hover {
+  color: white;
+}
+
+.side-nav .side-menu__location {
+  font-size: 6px;
+  padding-top: 5px;
+}
+
+.side-nav .side-menu__location li {
+  background: #1f4074;
+  position: relative;
+  top: -15px;
+}
+
+.side-nav .side-menu__location ul a {
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.side-nav .side-menu__login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 20px;
+}
+
+.side-nav .side-menu__login li {
+  color: white;
+  font-size: 12px;
+}
+
+.side-nav .btn-close {
+  display: -moz-inline-grid;
+  font-size: 12px;
+}
+
+.side-nav .productos {
+  position: fixed;
+  width: 250px;
+  color: red;
+  list-style: none;
+  border: 2px solid red;
+}
+
+.side-nav .side-menu__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+  bottom: 65px;
+  border-top: 1px solid white;
+  margin-top: 215px;
+  width: 250px;
+}
+
+.side-nav .side-menu__bottom a {
+  border-bottom: 0;
+  border-left: 1px solid;
+}
+
+.side-nav .side-menu__bottom li:last-child {
+  padding: 11px;
+}
+
+#main {
+  -webkit-transition: margin-left 0.5s;
+  transition: margin-left 0.5s;
+  padding: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+
+body {
+  font-family: 'lato', sans-serif;
+  margin: 0;
+  background: #F2F2F2;
+}
+
+body a {
+  text-decoration: none;
+  color: #1f4074;
+}
+
+body ul {
+  list-style: none;
+}
+
+@media only screen and (max-width: 360px) {
+  .licorera_logo {
+    width: 140px;
+    margin-top: 5px;
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  i.material-icons._user {
+    display: none;
+  }
+  .menu-right li:first-child {
+    display: none;
+  }
+  header {
+    padding: 0 3px;
+  }
+  header a.list.--right {
+    float: none;
+  }
+  header .side-nav .side-menu__bottom {
+    margin-top: 278px;
+  }
+  header nav.menu .menu-left li:last-child {
+    display: inline-block;
+  }
+  header nav.menu .menu_title--left {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header nav.menu .licorera_logo {
+    max-width: 150px;
+    margin-top: 5px;
+    left: 0;
+  }
+  header .menu_title {
+    font-size: .8rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header span.menu_title {
+    font-size: .7rem;
+  }
+  header span.menu_title--left {
+    font-size: 1.5em;
+    padding-left: 10px;
+  }
+  header i.menu_title--left {
+    font-size: 1.5em;
+    padding-left: 10px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
