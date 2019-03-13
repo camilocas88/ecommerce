@@ -22,7 +22,63 @@
     
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 499px) {
+    a.bgnav_space{
+        display: none;
+    }
+    i.material-icons._user{
+        display: none;
+    }
+
+    .menu-right{
+        li:first-child{
+            display: none;
+        }
+    }
+
+    
+
+    header{
+        padding: 0 3px;
+
+        a.list.--right{
+            float: none;
+        }
+
+        .side-nav .side-menu__bottom {
+            margin-top: 250px;
+        }
+        nav.menu{
+            .menu-left li:last-child {
+                display: inline-block;
+            }
+
+            .menu_title--left{
+                position: relative;
+                display: flex;
+            }
+
+            .licorera_logo{
+                max-width: 150px;
+                margin-top: 5px;
+                left: 0;
+            }
+        }
+        .menu_title{
+            font-size: .8rem;
+        }
+
+        a.bgnav_space{
+            display: none;
+        }
+
+        
+    }
+}
+
+
+@media only screen and (min-width : 500px) and (max-width : 1024px){
+    
     a.bgnav_space{
         display: none;
     }
@@ -74,88 +130,8 @@
 
         
     }
-}
-
-
-@media only screen and (min-device-width : 500px) and (max-device-width : 1024px){
-    a.bgnav_space{
-        display: none;
-    }
-    i.material-icons._user{
-        display: none;
-    }
-
-    .menu-right{
-        li:first-child{
-            display: none;
-        }
-    }
-
-    
-
-    header{
-        padding: 0 3px;
-
-        a.list.--right{
-            float: none;
-        }
-
-        .side-nav .side-menu__bottom {
-            margin-top: 278px;
-        }
-        nav.menu{
-            .menu-left li:last-child {
-                display: inline-block;
-            }
-
-            .menu_title--left{
-                position: relative;
-                display: flex;
-            }
-
-            .licorera_logo{
-                max-width: 150px;
-                margin-top: 5px;
-                left: 0;
-            }
-        }
-        .menu_title{
-            font-size: .8rem;
-        }
-
-        a.bgnav_space{
-            display: none;
-        }
-
-        
-    }
 
 }
-
-// @media only screen and (min-width: 768px) {
-//     header{
-        
-//         span.menu_title{
-//             font-size: .7rem;
-            
-//         }
-
-//         .side-nav .side-menu__bottom {
-//             margin-top: 140px;
-//         }
-//         span.menu_title--left{
-//             font-size: 1.5em;
-//             padding-left: 10px;
-//         }
-//         i.menu_title--left{
-//             font-size: 1.5em;
-//             padding-left: 10px;
-//         }
-
-        
-//     }
-// }
-
-// @media screen and (min-width: 1171px) {
+@media screen and (min-width: 1171px) {
     
-// }
+}

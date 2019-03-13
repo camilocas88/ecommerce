@@ -14,9 +14,9 @@
 
 <body>
     <nav class="bgnav">
-        <span class="bgnav_span"></span><a href=""><i class="fal fa-phone"></i> (1) 756 0060</a><span class="bgnav_span"></span>
+        <a href="" class="bgnav_space"></a><span class="bgnav_span"></span><a href=""><i class="fal fa-phone"></i> (1) 756 0060</a><span class="bgnav_span"></span>
         <a href=""><i class="fal fa-phone"></i> 300 203 5430</a><span class="bgnav_span"></span>
-        <a href=""><i class="fab fa-whatsapp"></i> 304 484 8594</a><span class="bgnav_span"></span>
+        <a href=""><i class="fab fa-whatsapp"></i> 304 484 8594</a><span class="bgnav_span"></span><a class="bgnav_space" href=""></a>
     </nav>
 
 
@@ -51,7 +51,8 @@
         <div id="side-menu" class="side-nav">
                 <!-- Location Menu -->
                 <ul class="side-menu__location">
-                <li class="submenuLocation"><a href="#"><i class="fal fa-map-marker-alt"></i> Ciudad <i class="fal fa-chevron-right" ></i></a>
+                <li class="submenuLocation"><a href="#"><i class="fal 
+                fa-map-marker-alt"></i> Ciudad <i class="fal fa-chevron-right-y" ></i></a>
                     <ul>
                         <li><a href="#">Bucaramanga</a></li>
                         <li><a href="#">Cartagena</a></li>
@@ -70,7 +71,7 @@
                     <li>Hola Camilo Mi Cuenta Cerrar Cesion</li>
                 </ul>
                 <!-- ariculos -->
-                <li class="submenu"><a href="#"><i class="fal fa-list-ul" ></i> Productos <i class="fal fa-chevron-right" ></i></a>
+                <li class="submenu"><a href="#"><i class="fal fa-list-ul" ></i> Productos <i class="fal fa-chevron-right-x" ></i></a>
                     <ul>
                         <li><a class="list" href="">Aguardiente</a></li>
                         <li><a class="list" href="">Brandy-Cognac</a></li>
@@ -99,8 +100,8 @@
                 <li><a href="#"><i class="fal fa-tags"></i> Promociones <i class="fal fa-chevron-right"></i> </a></li>
                 <li><a href="#"><i class="fal fa-envelope"></i> Contacto <i class="fal fa-chevron-right"></i> </a></li>
                 <ul class="side-menu__bottom">
-                <li><a href="#">Preguntas Frecuentes</a></li>
-                <li><a href="#">Políticas</a></li>
+                <li><a href="#"><i class="fal fa-question-circle fa-2x"></i>  Preguntas Frecuentes</a></li>
+                <li><a href="#"><i class="fal fa-address-card fa-2x"></i>  Políticas</a></li>
                 </ul>
             </ul>
 

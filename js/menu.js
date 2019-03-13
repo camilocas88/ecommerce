@@ -1,7 +1,7 @@
 // --------------------------------- Menu ----------------------------------
 
 function openSlideMenu(){
-    document.getElementById('side-menu').style.width = '250px';
+    document.getElementById('side-menu').style.width = '290px';
     // document.getElementById('side-menu').style.height = '600px';
   }
 

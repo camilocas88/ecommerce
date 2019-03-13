@@ -31,19 +31,23 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
   height: 30px;
   width: 100%;
-  text-align: center;
 }
 
 .bgnav a, .bgnav i {
   color: white;
   font-size: 1em;
-  display: inline-block;
-  padding: 0;
   margin: 0;
   margin-top: 3px;
+}
+
+.bgnav a .fa-whatsapp, .bgnav i .fa-whatsapp {
+  color: #4FCE5D;
+}
+
+.bgnav .bgnav_space {
+  width: 161px;
 }
 
 .bgnav .bgnav_span {
@@ -238,16 +242,20 @@ header .fa-bars:before {
   bottom: 65px;
   border-top: 1px solid white;
   margin-top: 215px;
-  width: 250px;
+  width: 100%;
 }
 
-.side-nav .side-menu__bottom a {
+.side-nav .side-menu__bottom a, .side-nav .side-menu__bottom i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border-bottom: 0;
-  border-left: 1px solid;
-}
-
-.side-nav .side-menu__bottom li:last-child {
-  padding: 11px;
+  padding: 3px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #main {
@@ -291,7 +299,7 @@ body ul {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 499px) {
   a.bgnav_space {
     display: none;
   }
@@ -308,7 +316,7 @@ body ul {
     float: none;
   }
   header .side-nav .side-menu__bottom {
-    margin-top: 278px;
+    margin-top: 250px;
   }
   header nav.menu .menu-left li:last-child {
     display: inline-block;
@@ -332,7 +340,7 @@ body ul {
   }
 }
 
-@media only screen and (min-device-width: 500px) and (max-device-width: 1024px) {
+@media only screen and (min-width: 500px) and (max-width: 1024px) {
   a.bgnav_space {
     display: none;
   }
