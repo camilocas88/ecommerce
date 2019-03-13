@@ -279,9 +279,22 @@ body ul {
     margin-top: 5px;
     left: 0;
   }
+  .menu {
+    font-size: 7px;
+  }
+  .bgnav {
+    font-size: 14px;
+  }
+  header nav.menu .licorera_logo {
+    max-width: 50px;
+    margin-top: 0;
+  }
 }
 
 @media only screen and (max-width: 500px) {
+  a.bgnav_space {
+    display: none;
+  }
   i.material-icons._user {
     display: none;
   }
@@ -314,19 +327,49 @@ body ul {
   header .menu_title {
     font-size: .8rem;
   }
+  header a.bgnav_space {
+    display: none;
+  }
 }
 
-@media only screen and (min-width: 768px) {
-  header span.menu_title {
-    font-size: .7rem;
+@media only screen and (min-device-width: 500px) and (max-device-width: 1024px) {
+  a.bgnav_space {
+    display: none;
   }
-  header span.menu_title--left {
-    font-size: 1.5em;
-    padding-left: 10px;
+  i.material-icons._user {
+    display: none;
   }
-  header i.menu_title--left {
-    font-size: 1.5em;
-    padding-left: 10px;
+  .menu-right li:first-child {
+    display: none;
+  }
+  header {
+    padding: 0 3px;
+  }
+  header a.list.--right {
+    float: none;
+  }
+  header .side-nav .side-menu__bottom {
+    margin-top: 278px;
+  }
+  header nav.menu .menu-left li:last-child {
+    display: inline-block;
+  }
+  header nav.menu .menu_title--left {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header nav.menu .licorera_logo {
+    max-width: 150px;
+    margin-top: 5px;
+    left: 0;
+  }
+  header .menu_title {
+    font-size: .8rem;
+  }
+  header a.bgnav_space {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

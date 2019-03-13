@@ -27,27 +27,34 @@ subMenuLocation.style.display = "none";
 let showMenu = false
 
 products.addEventListener('click', toggleList)
-locations.addEventListener('click', toggleList)
+locations.addEventListener('click', listcity)
 
-function toggleList(){
+function listcity(){
   if(!showMenu){
-    // list.classList.remove("fa-chevron-right")
-    list.forEach(item => item.classList.remove('fa-chevron-right'))
-    list.forEach(item => item.classList.add('fa-chevron-down'))
-    listLocations.forEach(item => item.classList.remove('fa-chevron-right'))
-    listLocations.forEach(item => item.classList.add('fa-chevron-down'))
-    // list.classList.add("fa-chevron-down")
-    subMenu.style.display = "block"
+    listLocations.classList.remove("fa-chevron-right")
+    listLocations.classList.add("fa-chevron-down")    
     subMenuLocation.style.display = "block"
     showMenu=true
 
   }else{
-    list.forEach(item => item.classList.add('fa-chevron-right'))
-    list.forEach(item => item.classList.remove('fa-chevron-down'))
-    listLocations.forEach(item => item.classList.add('fa-chevron-right'))
-    listLocations.forEach(item => item.classList.remove('fa-chevron-down'))
-    subMenu.style.display = "none"
+    listLocations.classList.add("fa-chevron-right")
+    listLocations.classList.remove("fa-chevron-down")    
     subMenuLocation.style.display = "none"
-    showMenu = false
+    showMenu=false
   }
+}
+
+function toggleList(){
+  if(!showMenu){
+    list.classList.remove("fa-chevron-right")
+  list.classList.add("fa-chevron-down")
+  subMenu.style.display ="block"
+  showMenu = true
+  }else{
+    list.classList.add("fa-chevron-right")
+  list.classList.remove("fa-chevron-down")
+  subMenu.style.display ="none"
+  showMenu = false
+  }
+
 }
