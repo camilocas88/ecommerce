@@ -18,6 +18,7 @@ const subMenu = document.querySelector(".submenu > ul")
 const subMenuLocation = document.querySelector(".submenuLocation > ul")
 
 window.onload = init;
+
 function init(){
 subMenu.style.display = "none"; 
 subMenuLocation.style.display = "none"; 
@@ -35,7 +36,6 @@ function listcity(){
     listLocations.classList.add("fa-chevron-down")    
     subMenuLocation.style.display = "block"
     showMenu=true
-
   }else{
     listLocations.classList.add("fa-chevron-right")
     listLocations.classList.remove("fa-chevron-down")    
@@ -46,9 +46,9 @@ function listcity(){
 
 function toggleList(){
   if(!showMenu){
-    list.classList.remove("fa-chevron-right")
+  list.classList.remove("fa-chevron-right")
   list.classList.add("fa-chevron-down")
-  subMenu.style.display ="block"
+  subMenu.style.display = "block"
   showMenu = true
   }else{
     list.classList.add("fa-chevron-right")
@@ -56,5 +56,4 @@ function toggleList(){
   subMenu.style.display ="none"
   showMenu = false
   }
-
 }
