@@ -1,28 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:100,200,400");
-@font-face {
-  font-family: Font Awesome\ 5 Brands;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.eot);
-  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.svg#fontawesome) format("svg");
-}
-
-@font-face {
-  font-family: Font Awesome\ 5 Free;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.eot);
-  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-regular-400.svg#fontawesome) format("svg");
-}
-
-@font-face {
-  font-family: Font Awesome\ 5 Free;
-  font-style: normal;
-  font-weight: 900;
-  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.eot);
-  src: url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.woff2) format("woff2"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.woff) format("woff"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.ttf) format("truetype"), url(https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-solid-900.svg#fontawesome) format("svg");
-}
-
+@import url("https://fonts.googleapis.com/css?family=Lato|Montserrat:100,200,400");
 .loader {
   position: fixed;
   z-index: 99;
@@ -74,7 +50,16 @@
   }
 }
 
-.bgnav {
+header {
+  background: white;
+  height: 20vh;
+}
+
+header a {
+  color: #223A6F;
+}
+
+header .bgnav {
   background-color: #888888;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,32 +71,27 @@
   width: 100%;
 }
 
-.bgnav a, .bgnav i {
+header .bgnav a, header .bgnav i {
   color: white;
   font-size: 1em;
   margin: 0;
   margin-top: 3px;
 }
 
-.bgnav a .fa-whatsapp, .bgnav i .fa-whatsapp {
+header .bgnav a .fa-whatsapp, header .bgnav i .fa-whatsapp {
   color: #4FCE5D;
 }
 
-.bgnav .bgnav_space {
+header .bgnav .bgnav_space {
   width: 161px;
 }
 
-.bgnav .bgnav_span {
+header .bgnav .bgnav_span {
   border: 1px solid white;
   color: #888888;
   position: relative;
   top: 2px;
   font-size: x-large;
-}
-
-header {
-  padding: 0 1.5rem;
-  background: white;
 }
 
 header nav.menu {
@@ -124,6 +104,7 @@ header nav.menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 1.5rem;
 }
 
 header nav.menu .licorera_logo {
@@ -181,7 +162,7 @@ header .fa-bars:before {
   left: 0;
   background-color: #111;
   opacity: 0.8;
-  overflow-y: auto;
+  overflow-y: hidden;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
@@ -235,6 +216,8 @@ header .fa-bars:before {
 .side-nav .side-menu__location {
   font-size: 6px;
   padding-top: 5px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .side-nav .side-menu__location li {
@@ -309,29 +292,118 @@ header .fa-bars:before {
       justify-content: space-around;
 }
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #223A6F;
+.footer {
   color: white;
-  text-align: center;
+  background: #223A6F;
+  padding: 4em 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7vw 1fr 7vw;
+      grid-template-columns: 7vw 1fr 7vw;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+}
+
+.footer-container {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / 5;
+  display: -ms-grid;
+  display: grid;
+  /* ACTING AS A GRID CONTAINER */
+  -ms-grid-columns: 2fr 2fr 2fr 2fr 2fr;
+      grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "navigation secondary " "contact contact social";
+}
+
+.footer-container a {
+  color: white;
+}
+
+.footer-container .social-networks {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.footer-container .social-networks h3 {
+  grid-column: 1 / -1;
+  margin: 33px;
+}
+
+.footer-container .social-networks li {
+  grid-column: 1 / -1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: -1;
+  grid-row: 2/1;
+}
+
+.bottom-line {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7vw 8fr 4fr 7vw;
+      grid-template-columns: 7vw 8fr 4fr 7vw;
+}
+
+.bottom-line p {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.bottom-line, .bottom-line a {
+  color: #223A6F;
+}
+
+.bottom-line .legal {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  justify-items: end;
 }
 
 body {
   font-family: 'lato', sans-serif;
   margin: 0;
   background: #F2F2F2;
+  position: static;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
 }
 
-body a {
+li {
+  list-style-type: none;
+}
+
+a {
   text-decoration: none;
-  color: #223A6F;
 }
 
-body ul {
+ul {
   list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.banner img {
+  height: 65vh;
+}
+
+.banner_bottom {
+  height: 15vh;
+}
+
+main {
+  padding-bottom: 1rem;
 }
 
 @media only screen and (max-width: 360px) {
@@ -371,6 +443,9 @@ body ul {
   header .side-nav .side-menu__bottom {
     margin-top: 250px;
   }
+  header nav.menu {
+    padding: 0;
+  }
   header nav.menu .menu-left li:last-child {
     display: inline-block;
   }
@@ -403,7 +478,11 @@ body ul {
   .menu-right li:first-child {
     display: none;
   }
+  .banner img {
+    height: 65vh;
+  }
   header {
+    height: 15vh;
     padding: 0 3px;
   }
   header a.list.--right {

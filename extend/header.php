@@ -12,15 +12,14 @@
 </head>
 
 <body>
+    <header>
     <div class="loader"><div class="load"><img src="img/loader/loader.gif" alt=""></div></div>
     <nav class="bgnav">
         <a href="" class="bgnav_space"></a><span class="bgnav_span"></span><a href=""><i class="fal fa-phone"></i> (1) 756 0060</a><span class="bgnav_span"></span>
         <a href=""><i class="fal fa-phone"></i> 300 203 5430</a><span class="bgnav_span"></span>
         <a href=""><i class="fab fa-whatsapp"></i> 304 484 8594</a><span class="bgnav_span"></span><a class="bgnav_space" href=""></a>
     </nav>
-
-
-    <header>
+    
         <nav class="menu">
             <div class="menu-left">
                 <ul>

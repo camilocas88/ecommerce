@@ -1,9 +1,56 @@
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: $primary-color;
-    color: white;
-    text-align: center;
+
+.footer {
+  color:white;
+  background: $primary-color;
+  padding: 4em 0;
+
+  display: grid; grid-template-columns: 7vw 1fr 7vw; grid-template-rows: auto auto;
+
+  
+
+  &-container {
+    grid-column: 1 / 5;
+    display: grid;
+    /* ACTING AS A GRID CONTAINER */
+    
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: "navigation secondary " "contact contact social";
+
+    a{
+      color: white;
+    }
+
+    .social-networks{
+      display: grid;
+      
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+      
+      h3 {
+        grid-column: 1 / -1;
+        margin: 33px;
+      }
+      li{
+        grid-column: 1 / -1;
+        grid-row: 2/1;
+      }
+
+    }
+
+    
   }
+}
+
+.bottom-line { 
+  display: grid;
+   grid-template-columns: 7vw 8fr 4fr 7vw;
+
+   p { grid-column: 2; }
+   &,a{color: $primary-color; }
+
+   .legal { 
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: end; }
+   }

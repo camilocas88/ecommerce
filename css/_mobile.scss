@@ -49,6 +49,7 @@
             margin-top: 250px;
         }
         nav.menu{
+            padding: 0  ;
             .menu-left li:last-child {
                 display: inline-block;
             }
@@ -92,9 +93,14 @@
         }
     }
 
+    .banner img{
+        height: 65vh;
+    }
+
     
 
     header{
+        height: 15vh;
         padding: 0 3px;
 
         a.list.--right{
