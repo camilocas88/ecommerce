@@ -49,8 +49,8 @@
 
         <div id="side-menu" class="side-nav">
             <!-- Location Menu -->
-            <ul class="side-menu__location">
-                <li class="submenuLocation"><a href="#"><i class="fal 
+            <ul class="side-menu-ul location">
+                <li class="location"><a href="#"><i class="fal 
                 fa-map-marker-alt"></i> Ciudad <i class="fal fa-chevron-right"></i></a>
                     <ul>
                         <li><a href="#">Bucaramanga</a></li>
@@ -62,15 +62,16 @@
                 </li>
             </ul>
 
-            <ul>
-                <!-- Login menu -->
-                <ul class="side-menu__login">
+            <!-- Login menu -->
+            <ul class="side-menu__login">
                     <li><a href="#" class="btn-close" onclick="closeSlideMenu()"><i class="fal fa-bars fa-2x"></i>Menú</a></li>
                     <li><a href="#" class="btn-close"><i class="fal fa-user fa-2x"></i></a></li>
                     <li>Hola Camilo Mi Cuenta Cerrar Cesion</li>
                 </ul>
+
+           <ul class="side-menu-ul">
                 <!-- ariculos -->
-                <li class="submenu"><a href="#"><i class="fal fa-list-ul"></i> Productos <i class="fal fa-chevron-right"></i></a>
+                <li class="side-menu-ul"><a href="#"><i class="fal fa-list-ul"></i> Productos <i class="fal fa-chevron-right"></i></a>
                     <ul>
                         <li><a class="list" href="">Aguardiente</a></li>
                         <li><a class="list" href="">Brandy-Cognac</a></li>
@@ -102,7 +103,7 @@
                     <li><a href="#"><i class="fal fa-question-circle fa-2x"></i> Preguntas Frecuentes</a></li>
                     <li><a href="#"><i class="fal fa-address-card fa-2x"></i> Políticas</a></li>
                 </ul>
-            </ul>
+            
         </div>
     </header>
 

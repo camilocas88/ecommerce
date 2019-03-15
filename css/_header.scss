@@ -7,6 +7,8 @@ header {
       color:$primary-color;
     }
 
+
+
     .bgnav {
       background-color: #888888;
       display: flex;
@@ -34,28 +36,25 @@ header {
           
       }
     }
+
+
     
 
-    nav.menu{
-      
+    nav.menu{      
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 1.5rem;  
-
+        padding: 0 1.5rem; 
 
         .licorera_logo{
           position: relative;
           // display: flex;
-          left: 115px;
+          left: 85px;
           margin: 5px 0;
         }
-        
-
         .menu-left li:last-child {
             display: none;
         }
-        
         ul{
             margin: 0;
             padding: 0;
@@ -99,6 +98,16 @@ header {
     opacity: 0.8;
     overflow-y:hidden;
     @include easeOut;
+    
+
+    .side-menu-ul ul{ 
+      display: none;
+    }
+    
+
+    // .side-menu-ul li:hover ul{
+    //   display: block;
+    // }
 
     ul{
         padding: 0;
@@ -140,11 +149,7 @@ header {
         }
     }
 
-    .side-menu__location{
-      font-size: 6px;
-      padding-top: 5px;
-      @include easeOut;
-
+    .location{
        li {
           background: $primary-color;
           position: relative;
@@ -175,13 +180,7 @@ header {
       font-size: 12px;
     }
 
-    .productos{
-        position: fixed;
-        width: 250px;
-        color: red;
-        list-style: none;
-        border: 2px solid red;
-    }
+    
 
     .side-menu__bottom {
       display: flex;

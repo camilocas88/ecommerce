@@ -1,28 +1,32 @@
-// Media Query Mixins
-@media only screen and (max-width: 360px) {
-    .licorera_logo{
-        width: 140px;
-        margin-top: 5px;
-        left: 0;
+// / Media Query Mixins
+@media(min-width : 320px) and (max-width : 480px){
+   header {
+        height: 15vh; 
+        
+
+      span.menu_title{
+        font-size: .6rem;
     }
 
-    .menu{
-        font-size: 7px;
+      nav.menu ul a{
+        font-size: 0.6rem;
+
+        .licorera_logo{
+            width: 100px;
+        }
+      }
+   }
+
+   .banner img {
+    height: 70vh;
     }
 
-    .bgnav{
-        font-size: 14px;
-    }
-
-    header nav.menu .licorera_logo{
-        max-width: 50px;
-        // border: 1px solid red;
-        margin-top: 0;
-    }
-    
+   footer   {
+    font-size: 7px;
+   }    
 }
 
-@media only screen and (max-width: 499px) {
+@media only screen and (max-width: 799px) {
     a.bgnav_space{
         display: none;
     }
@@ -35,12 +39,10 @@
             display: none;
         }
     }
-
-    
-
     header{
         padding: 0 3px;
-
+        
+        
         a.list.--right{
             float: none;
         }
@@ -50,6 +52,7 @@
         }
         nav.menu{
             padding: 0  ;
+
             .menu-left li:last-child {
                 display: inline-block;
             }
@@ -72,13 +75,11 @@
         a.bgnav_space{
             display: none;
         }
-
-        
     }
 }
 
 
-@media only screen and (min-width : 500px) and (max-width : 1024px){
+@media only screen and (min-width : 800px) and (max-width : 1024px){
     
     a.bgnav_space{
         display: none;
@@ -96,11 +97,12 @@
     .banner img{
         height: 65vh;
     }
-
-    
+    .banner_bottom{
+        height: 17vh;
+    }   
 
     header{
-        height: 15vh;
+        height: 18vh;
         padding: 0 3px;
 
         a.list.--right{
@@ -121,8 +123,8 @@
             }
 
             .licorera_logo{
-                max-width: 150px;
-                margin-top: 5px;
+                width: 170px;
+                margin-top: 2px;
                 left: 0;
             }
         }
@@ -133,11 +135,11 @@
         a.bgnav_space{
             display: none;
         }
-
-        
     }
-
 }
-@media screen and (min-width: 1171px) {
-    
-}
+@media only screen and (min-width : 1025px) and (max-width : 1367px){
+        .licorera_logo{
+            margin: 2px 0;
+            width: 195px;
+        }
+}   

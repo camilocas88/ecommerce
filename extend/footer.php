@@ -65,12 +65,10 @@
 
 
 <script src="js/loader.js"></script>
-
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
+<script src="js/jquery.js"></script>
 <script src="js/menu.js"></script>
 <!--JavaScript at end of body for optimized loading-->
-<script type="text/javascript" src="js/materialize.min.js"></script>
+<!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
 
 
 <!-- //pops ups -->
