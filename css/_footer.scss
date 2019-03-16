@@ -2,14 +2,18 @@
 .footer {
   color:white;
   background: $primary-color;
-  padding: 4em 0;
+  padding: 1em 1em;
 
-  display: grid; grid-template-columns: 7vw 1fr 7vw; grid-template-rows: auto auto;
+  display: grid; 
+  grid-template-columns: 7vw 1fr 7vw; 
+  grid-template-rows: 1fr;
 
   
 
   &-container {
+    padding: 0;
     grid-column: 1 / 5;
+    grid-row: 1 / 1;
     display: grid;
     /* ACTING AS A GRID CONTAINER */
     
@@ -21,8 +25,13 @@
       color: white;
     }
 
+    ul{
+      padding: 0 2em;
+    }
+
     .social-networks{
       display: grid;
+      // grid-area: social;
       
       grid-template-columns: repeat(4, 1fr);
       justify-items: center;
@@ -30,15 +39,13 @@
       h3 {
         grid-column: 1 / -1;
         margin: 33px;
+        padding: 0;
       }
       li{
         grid-column: 1 / -1;
-        grid-row: 2/1;
+        grid-row: 1/1;
       }
-
     }
-
-    
   }
 }
 
@@ -53,4 +60,76 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       justify-items: end; }
+   }
+
+  //  ----------------menu footer mobile------------------------
+
+   #fmobile{
+     background: $primary-color;
+     color: white;
+     width: 100%;
+     min-width: 300px;
+     margin: 0;
+   }
+
+   .menu-footer{
+    // border: 2px solid yellow;
+    width: 100%;
+    padding: 0;
+
+    ul{
+      display: none;
+      background: white;
+      color: $primary-color;
+      
+    }
+
+    // li:hover ul{
+    //   display: block;
+    // }
+
+    a {
+      // border: 1px solid green;
+      display: block;
+      padding: .5em .5em;
+      width: 100%;
+      font-size: 1.2em;
+      font-weight: lighter;
+
+      &:hover{
+        background:lighten($primary-color, 10%)
+      }
+
+    }
+
+    .icon{
+      // border: 1px solid violet;
+      font-size: 1em;
+      line-height: 24px;
+
+      &.left{
+        margin-right: 1rem;
+        float: left;
+      }
+      &.right {
+        float:right;
+        margin-left: 1rem;
+      }
+    }
+
+    
+    .activado > a {
+      background:lighten($primary-color, 20%);
+      color: white; 
+    }
+
+    .social{
+      display: flex;
+      a {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+     
    }

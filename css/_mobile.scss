@@ -1,29 +1,13 @@
 // / Media Query Mixins
-@media(min-width : 320px) and (max-width : 480px){
-   header {
-        height: 15vh; 
-        
-
-      span.menu_title{
-        font-size: .6rem;
-    }
-
-      nav.menu ul a{
-        font-size: 0.6rem;
-
-        .licorera_logo{
-            width: 100px;
-        }
+@media(min-width : 320px) and (max-width : 390px){
+  header {
+      .menu{
+          .menu-left, .menu-right {
+              display: flex;
+              font-size: 1px
+          }
       }
-   }
-
-   .banner img {
-    height: 70vh;
-    }
-
-   footer   {
-    font-size: 7px;
-   }    
+  }
 }
 
 @media only screen and (max-width: 799px) {
@@ -75,6 +59,9 @@
         a.bgnav_space{
             display: none;
         }
+    }
+    #desktop {
+        display: none;
     }
 }
 
@@ -135,11 +122,18 @@
         a.bgnav_space{
             display: none;
         }
+    }#fmobile{
+        display: none;
     }
 }
+
 @media only screen and (min-width : 1025px) and (max-width : 1367px){
         .licorera_logo{
             margin: 2px 0;
             width: 195px;
+        }
+
+        #fmobile{
+            display: none;
         }
 }   

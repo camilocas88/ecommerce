@@ -16,7 +16,6 @@ const subMenu = document.querySelectorAll('.side-menu-ul ul')
 
 for (let i = 0; i < lists.length; i++) {
   let showMenu = false
-      if(!showMenu){
         lists[i].addEventListener("click", ()=> {
           if(!showMenu){
             chevron[i].classList.remove("fa-chevron-right")
@@ -26,9 +25,8 @@ for (let i = 0; i < lists.length; i++) {
           }else{
             chevron[i].classList.remove("fa-chevron-down")
             chevron[i].classList.add("fa-chevron-right")
-            subMenu[i].style.display ="none"  
+            subMenu[i].style.display ="none"
             showMenu=false
           }
          })
-      }
     }

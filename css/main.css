@@ -162,7 +162,7 @@ header .fa-bars:before {
   left: 0;
   background-color: #111;
   opacity: 0.8;
-  overflow-y: hidden;
+  overflow-y: auto;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
@@ -173,6 +173,7 @@ header .fa-bars:before {
 
 .side-nav ul {
   padding: 0;
+  margin: 0;
 }
 
 .side-nav a {
@@ -195,6 +196,7 @@ header .fa-bars:before {
 
 .side-nav a:not(.btn-close) {
   border-bottom: 2px solid;
+  height: 12px;
 }
 
 .side-nav a.list {
@@ -220,11 +222,11 @@ header .fa-bars:before {
 .side-nav .location li {
   background: #223A6F;
   position: relative;
-  top: -15px;
+  top: 0px;
 }
 
 .side-nav .location ul a {
-  font-size: 12px;
+  font-size: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,9 +247,11 @@ header .fa-bars:before {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-right: 20px;
+  margin-top: 8px;
 }
 
-.side-nav .side-menu__login li {
+.side-nav .side-menu__login p
+li {
   color: white;
   font-size: 12px;
 }
@@ -264,7 +268,7 @@ header .fa-bars:before {
   position: static;
   bottom: 65px;
   border-top: 1px solid white;
-  margin-top: 215px;
+  margin-top: 100px;
   width: 100%;
 }
 
@@ -284,19 +288,22 @@ header .fa-bars:before {
 .footer {
   color: white;
   background: #223A6F;
-  padding: 4em 0;
+  padding: 1em 1em;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 7vw 1fr 7vw;
       grid-template-columns: 7vw 1fr 7vw;
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
 }
 
 .footer-container {
+  padding: 0;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-column: 1 / 5;
+  -ms-grid-row: 1;
+  grid-row: 1 / 1;
   display: -ms-grid;
   display: grid;
   /* ACTING AS A GRID CONTAINER */
@@ -311,6 +318,10 @@ header .fa-bars:before {
   color: white;
 }
 
+.footer-container ul {
+  padding: 0 2em;
+}
+
 .footer-container .social-networks {
   display: -ms-grid;
   display: grid;
@@ -322,13 +333,13 @@ header .fa-bars:before {
 .footer-container .social-networks h3 {
   grid-column: 1 / -1;
   margin: 33px;
+  padding: 0;
 }
 
 .footer-container .social-networks li {
   grid-column: 1 / -1;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: -1;
-  grid-row: 2/1;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
 }
 
 .bottom-line {
@@ -353,6 +364,72 @@ header .fa-bars:before {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   justify-items: end;
+}
+
+#fmobile {
+  background: #223A6F;
+  color: white;
+  width: 100%;
+  min-width: 300px;
+  margin: 0;
+}
+
+.menu-footer {
+  width: 100%;
+  padding: 0;
+}
+
+.menu-footer ul {
+  display: none;
+  background: white;
+  color: #223A6F;
+}
+
+.menu-footer a {
+  display: block;
+  padding: .5em .5em;
+  width: 100%;
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+
+.menu-footer a:hover {
+  background: #2e4e96;
+}
+
+.menu-footer .icon {
+  font-size: 1em;
+  line-height: 24px;
+}
+
+.menu-footer .icon.left {
+  margin-right: 1rem;
+  float: left;
+}
+
+.menu-footer .icon.right {
+  float: right;
+  margin-left: 1rem;
+}
+
+.menu-footer .activado > a {
+  background: #3a63bd;
+  color: white;
+}
+
+.menu-footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-footer .social a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body {
@@ -380,7 +457,7 @@ ul {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
+  font-weight: bold;
 }
 
 .banner img {
@@ -395,24 +472,12 @@ main {
   padding-bottom: 1rem;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  header {
-    height: 15vh;
-  }
-  header span.menu_title {
-    font-size: .6rem;
-  }
-  header nav.menu ul a {
-    font-size: 0.6rem;
-  }
-  header nav.menu ul a .licorera_logo {
-    width: 100px;
-  }
-  .banner img {
-    height: 70vh;
-  }
-  footer {
-    font-size: 7px;
+@media (min-width: 320px) and (max-width: 390px) {
+  header .menu .menu-left, header .menu .menu-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1px;
   }
 }
 
@@ -456,6 +521,9 @@ main {
     font-size: .8rem;
   }
   header a.bgnav_space {
+    display: none;
+  }
+  #desktop {
     display: none;
   }
 }
@@ -506,12 +574,18 @@ main {
   header a.bgnav_space {
     display: none;
   }
+  #fmobile {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1367px) {
   .licorera_logo {
     margin: 2px 0;
     width: 195px;
+  }
+  #fmobile {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

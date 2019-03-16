@@ -36,10 +36,6 @@ header {
           
       }
     }
-
-
-    
-
     nav.menu{      
         display: flex;
         justify-content: space-between;
@@ -96,7 +92,7 @@ header {
     left: 0;
     background-color: #111;
     opacity: 0.8;
-    overflow-y:hidden;
+    overflow-y:auto;
     @include easeOut;
     
 
@@ -111,6 +107,7 @@ header {
 
     ul{
         padding: 0;
+        margin: 0;
     }
 
     a{
@@ -130,6 +127,7 @@ header {
 
         &:not(.btn-close){
           border-bottom: 2px solid;
+          height: 12px;
           
         }
         
@@ -153,11 +151,11 @@ header {
        li {
           background: $primary-color;
           position: relative;
-          top: -15px;
+          top: 0px;
         }
 
         ul a{
-          font-size: 12px;
+          font-size: 15px;
           display: flex;
           flex-direction: column;
           align-items: flex-end;
@@ -168,6 +166,7 @@ header {
       display: flex;
       justify-content: space-between;
       padding-right: 20px;
+      margin-top: 8px;p
 
       li{
           color: white;
@@ -187,7 +186,7 @@ header {
       position: static;
       bottom: 65px;
       border-top: 1px solid white;
-      margin-top: 215px;
+      margin-top: 100px;
       width: 100%;
 
       a, i{
