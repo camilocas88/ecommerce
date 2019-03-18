@@ -286,6 +286,7 @@ li {
   color: white;
   background: #223A6F;
   padding: 1em 1em;
+  height: 250px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 7vw 1fr 7vw;
@@ -430,7 +431,14 @@ li {
 }
 
 body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
   font-family: 'lato', sans-serif;
+  height: 100%;
   margin: 0;
   background: #F2F2F2;
   position: static;
@@ -467,6 +475,8 @@ h1, h2, h3, h4, h5, h6 {
 
 main {
   padding-bottom: 1rem;
+  min-height: 100%;
+  margin: 0 auto -50px;
 }
 
 @media (min-width: 320px) and (max-width: 390px) {

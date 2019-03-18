@@ -108,7 +108,9 @@
                 <li><a href="#"><i class="fal fa-question-circle fa-2x"></i> Preguntas Frecuentes</a></li>
                 <li><a href="#"><i class="fal fa-address-card fa-2x"></i> Políticas</a></li>
             </ul>
-
-
         </div>
-    </header> 
+    </header>
+
+    <main class=container>
+
+    

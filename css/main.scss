@@ -4,9 +4,15 @@
 @import 'header';
 @import 'footer';
 
+body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
-body {
+html{
     font-family: 'lato', sans-serif;
+    height: 100%;
     margin: 0;
     background:$back-color;
     position: static;
@@ -38,7 +44,9 @@ h1,h2,h3,h4,h5,h6 {
     height: 15vh;
 }
 main{
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
+  min-height: 100%;
+  margin: 0 auto -50px;
 }
 
 
