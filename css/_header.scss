@@ -186,14 +186,14 @@ header {
       position: static;
       bottom: 65px;
       border-top: 1px solid white;
-      margin-top: 100px;
+      margin-top: 240px;
       width: 100%;
 
       a, i{
         display: flex;
         border-bottom: 0;
         padding: 3px;
-        align-items: center;
+        // align-items: center;
         justify-content: space-around;
       }
     }

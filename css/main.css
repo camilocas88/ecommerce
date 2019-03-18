@@ -268,7 +268,7 @@ li {
   position: static;
   bottom: 65px;
   border-top: 1px solid white;
-  margin-top: 100px;
+  margin-top: 240px;
   width: 100%;
 }
 
@@ -278,9 +278,6 @@ li {
   display: flex;
   border-bottom: 0;
   padding: 3px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -388,7 +385,7 @@ li {
 .menu-footer a {
   display: block;
   padding: .5em .5em;
-  width: 100%;
+  color: white;
   font-size: 1.2em;
   font-weight: lighter;
 }
@@ -552,7 +549,7 @@ main {
     float: none;
   }
   header .side-nav .side-menu__bottom {
-    margin-top: 278px;
+    margin-top: 240px;
   }
   header nav.menu .menu-left li:last-child {
     display: inline-block;

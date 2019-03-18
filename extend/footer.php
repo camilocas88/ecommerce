@@ -58,9 +58,10 @@
 
      <!-- Mobile -->
      <footer id="fmobile">
-        <div class="">
-            <ul class="menu-footer">
-                <li ><a><i class="icon left fal fa-calendar-alt"></i> Horarios Bogota <i class="icon right fal fa-chevron-right"></i></a><ul>
+        <div class="footer_mobile">
+            <ul class="menu-footer despegable">
+                <li><a><i class="icon left fal fa-calendar-alt"></i> Horarios Bogota <i class="icon right fal fa-chevron-right"></i></a>
+                  <ul>
                     <li>Lunes a Jueves | 9:00am - 10:00pm</li>
                     <li>Viernes | 9:00am - 4:00am</li>
                     <li>Sabado | 11:00am - 12:00am</li>
@@ -68,17 +69,18 @@
                   </ul>
                 </li>
                   
-                <li ><a ><i class="icon left fal fa-clock"></i>Tiempo de entrega <i class="icon right fal fa-chevron-right"></i></a><ul>
+                <li ><a ><i class="icon left fal fa-clock"></i>Tiempo de entrega <i class="icon right fal fa-chevron-right"></i></a>
+                    <ul>
                       <li>Pago contra entrega 30 min</li>
                       <li>Pago Online 2 dias</li>
                     </ul>
                 </li>
                     
-                <li ><a ><i class="icon left fal fa-globe"></i>Cobertura <i class="icon right fal fa-chevron-right"></i></a><ul>
+                <li ><a ><i class="icon left fal fa-globe"></i>Cobertura <i class="icon right fal fa-chevron-right"></i></a>
+                  <ul>
                       <img src="img/mapa.png" alt="">
                   </ul>
                 </li>
-                  
             </ul>
             <ul class="menu-footer" >
                 <li><a class="text-white" href="">Blog</a></li>
@@ -92,7 +94,6 @@
                     <a class="text-white" href=""><i class="fab fa-instagram fa-2x"></i></a>
                     <a class="text-white" href=""><i class="fab fa-youtube fa-2x"></i></a>
                 </div>
-                
             </ul>
         </div>
     </footer>

@@ -30,3 +30,22 @@ for (let i = 0; i < lists.length; i++) {
           }
          })
     }
+
+// --------------------------------- footer menu ----------------------------------
+
+const footer = document.querySelectorAll('.despegable > li')
+const footerMenu = document.querySelectorAll('.despegable ul')
+
+
+for (let i = 0; i < footer.length; i++) {
+  let showMenu = false
+    footer[i].addEventListener("click", ()=> {
+          if(!showMenu){
+            footerMenu[i].style.display ="block"
+            showMenu=true
+          }else{
+            footerMenu[i].style.display ="none"
+            showMenu=false
+          }
+         })
+    }

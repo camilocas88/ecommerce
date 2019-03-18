@@ -73,7 +73,6 @@
    }
 
    .menu-footer{
-    // border: 2px solid yellow;
     width: 100%;
     padding: 0;
 
@@ -81,8 +80,7 @@
       display: none;
       background: white;
       color: $primary-color;
-      
-    }
+      }
 
     // li:hover ul{
     //   display: block;
@@ -92,7 +90,8 @@
       // border: 1px solid green;
       display: block;
       padding: .5em .5em;
-      width: 100%;
+      // width: 100%;
+      color: white;
       font-size: 1.2em;
       font-weight: lighter;
 
