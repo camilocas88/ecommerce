@@ -56,10 +56,10 @@
             <hr class="two-center">
             <input type="checkbox" name="comany-singin" id="terms">
             <label for="comany-singin" class="company-singin">Registrar a nombre de empresa</label>
-            <div class="hidden-div">
+            <fieldset id="hidden-div">
                 <input type="text" name="company" placeholder="Nombre de la empresa *" id="company">
                 <input type="text" name="nit" placeholder="NIT *" id="nit">
-            </div>
+            </fieldset>
 
 
             <button type="submit" class="button-yellow" name="register" value="Submit">FINALIZAR REGISTRO</button>

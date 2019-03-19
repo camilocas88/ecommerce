@@ -34,7 +34,7 @@
             </ul>
             <div class="social-networks">
                 <h3>CONTACTO</h3>
-                <li><a href="#">Formulario  </a></li>
+                <!-- <li><a href="#">Formulario  </a></li> -->
                 <!-- <div class="text-input">
                 <form action="post">
                     <input type="email" name="Enter Your Email Address" size="20">

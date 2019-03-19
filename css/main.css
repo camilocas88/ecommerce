@@ -603,8 +603,15 @@ li {
   margin-left: 0%;
 }
 
-.two div.hidden-div {
-  border: 1px solid red;
+.two input[type="checkbox"] ~ fieldset {
+  display: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.two input[type="checkbox"]:checked ~ fieldset {
+  display: block;
+  border: none;
 }
 
 .social {

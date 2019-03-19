@@ -162,9 +162,21 @@
         width: 80%;
         margin-left: 0%;
     }
-    div.hidden-div{
-      border: 1px solid red;
+
+    input[type="checkbox"] ~ fieldset{
+      // height: 0;
+      display: none;
+      
+      // overflow: hidden;
+      transition: all 0.2s ease;	
     }
+
+    // is checkbox is checked show fieldset
+    input[type="checkbox"]:checked ~ fieldset{
+      display: block;
+      border: none;
+      }
+   
 }
 
 

@@ -49,3 +49,16 @@ for (let i = 0; i < footer.length; i++) {
           }
          })
     }
+
+// --------------------------------- show content login page  ----------------------------------
+
+// function showContent() {
+//   element = document.getElementById("content");
+//   check = document.getElementById("check");
+//   if (check.checked) {
+//       element.style.display='block';
+//   }
+//   else {
+//       element.style.display='none';
+//   }
+// }
