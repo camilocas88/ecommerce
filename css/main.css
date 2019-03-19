@@ -430,7 +430,7 @@ li {
           justify-content: center;
 }
 
-.wrapper {
+.login {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -439,34 +439,218 @@ li {
   grid-auto-rows: minmax(100px, auto);
 }
 
+.login h1 {
+  color: #223A6F;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.login .h1-right {
+  text-align: center;
+}
+
+.login h2 {
+  color: #888888;
+  font-weight: 400;
+  font-size: 1em;
+  text-align: center;
+  line-height: 1;
+  margin-top: 0;
+  position: relative;
+  top: -12px;
+}
+
 .one {
-  margin: 30px;
-  border: 1px solid red;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
+  text-align: end;
+}
+
+.one, .two {
+  padding: 85px;
+  margin: 30px;
+}
+
+.one input, .two input {
+  width: 80%;
+  font-weight: lighter;
+  margin-bottom: 15px;
+  border: 0.5px solid #888888;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.one hr.center, .two hr.center {
+  width: 80%;
+  margin-right: 0%;
+  margin-top: 30px;
+}
+
+.one [type="checkbox"]:checked + label, .two [type="checkbox"]:checked + label {
+  color: #162648;
+}
+
+.one .checkbox, .two .checkbox {
+  margin: 0 0 1em 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #223A6F;
+}
+
+.one .checkbox:hover, .two .checkbox:hover {
+  color: #223A6F;
+}
+
+.one .checkbox .input-remember, .two .checkbox .input-remember {
+  width: 12px;
+  color: #223A6F;
+  border: 0.5 solid #223A6F;
+}
+
+.one .checkbox label, .two .checkbox label {
+  color: #223A6F;
+  font-size: 14px;
+}
+
+.one .checkbox a, .two .checkbox a {
+  color: #223A6F;
+  font-size: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 138px;
+}
+
+.one button, .two button {
+  width: 83%;
+  border-radius: 3px;
+  border: none;
+  padding: 7px;
+  color: white;
+}
+
+.one button.button-blue, .two button.button-blue {
+  background: #223A6F;
+}
+
+.one button.button-yellow, .two button.button-yellow {
+  background: #B27E2C;
+}
+
+.one .paragraph, .two .paragraph {
+  display: inline-block;
+  width: 80%;
+}
+
+.one .paragraph .hr-left, .two .paragraph .hr-left {
+  position: relative;
+  margin-left: 0%;
+  margin-right: 65%;
+  top: 23px;
+}
+
+.one .paragraph p, .two .paragraph p {
+  font-size: 12px;
+  color: gray;
+  text-align: center;
+}
+
+.one .paragraph .hr-right, .two .paragraph .hr-right {
+  position: relative;
+  margin-left: 64%;
+  margin-right: 0%;
+  top: -18px;
 }
 
 .two {
-  margin: 30px;
-  border: 2px solid blue;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
 }
 
-.social-login .fab {
+.two div.city label {
+  margin-right: 31px;
+  color: gray;
+  font-size: 11px;
+}
+
+.two input#advertising, .two input#terms, .two input#comany-singin {
+  width: 12px;
+}
+
+.two label {
+  font-size: 10px;
+  color: gray;
+}
+
+.two label a {
+  color: #223A6F;
+  text-decoration: underline;
+}
+
+.two label.company-singin {
+  color: #223A6F;
+}
+
+.two hr.two-center {
+  width: 80%;
+  margin-left: 0%;
+}
+
+.two div.hidden-div {
+  border: 1px solid red;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social .social-login .fab {
   margin: 0;
   padding: 8px;
   font-size: 20px;
   width: 20px;
   text-align: center;
-  margin: 1px 2px;
+  margin: 1px 5px;
   border-radius: 50%;
 }
 
-.social-login .fab:hover {
+.social .social-login .fab:hover {
   opacity: 0.7;
+}
+
+.social .social-login.left {
+  margin-left: 79px;
+}
+
+.social .social-login.left a {
+  color: #7287B3;
+  text-transform: uppercase;
+}
+
+.social .social-login.right {
+  margin-right: 5px;
+}
+
+.social .social-login.right a {
+  color: #DD4B39;
+  text-transform: uppercase;
+}
+
+.social.right {
+  margin-left: -73px;
+  margin-right: 74px;
 }
 
 .fa-facebook-f {
@@ -477,6 +661,33 @@ li {
 .fa-google {
   background: #dd4b39;
   color: white;
+}
+
+.middle {
+  text-align: center;
+}
+
+.middle input {
+  width: 70%;
+  font-weight: lighter;
+  margin-bottom: 15px;
+  border: 0.5px solid #888888;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.middle button {
+  width: 13%;
+  text-transform: uppercase;
+  position: relative;
+  left: -9px;
+  line-height: 14px;
+  border-radius: 3px;
+  border: none;
+  padding: 7px;
+  color: white;
+  font-size: 10px;
+  background: #223A6F;
 }
 
 body {
@@ -524,7 +735,7 @@ h1, h2, h3, h4, h5, h6 {
 
 main {
   padding-bottom: 1rem;
-  min-height: calc(100% - 200px);
+  min-height: calc(100% - 30%);
   margin: 0 auto -50px;
 }
 
@@ -549,6 +760,7 @@ main {
   }
   header {
     padding: 0 3px;
+    height: 18vh;
   }
   header a.list.--right {
     float: none;
@@ -582,6 +794,34 @@ main {
   #desktop {
     display: none;
   }
+  .login {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .one, .two {
+    padding: 0;
+    margin: auto;
+    -ms-grid-column: 1;
+    grid-column: 1/1;
+    text-align: center;
+  }
+  .two div.city label {
+    display: block;
+  }
+  .two .social.right {
+    margin-left: -41px;
+    margin-right: 63px;
+    margin-bottom: 17px;
+  }
+  .one .social .social-login.left {
+    margin-left: 33px;
+  }
+  .one .social .social-login.right {
+    margin-right: 40px;
+  }
+  hr.center {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1024px) {
@@ -601,7 +841,7 @@ main {
     height: 17vh;
   }
   header {
-    height: 18vh;
+    height: 20vh;
     padding: 0 3px;
   }
   header a.list.--right {
@@ -633,6 +873,22 @@ main {
   #fmobile {
     display: none;
   }
+  .login {
+    grid-gap: 2px;
+  }
+  .one, .two {
+    padding: 25px;
+    margin: 10px;
+  }
+  .footer {
+    height: 325px;
+  }
+  .two div.city label {
+    display: block;
+  }
+  .middle {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1367px) {
@@ -641,6 +897,12 @@ main {
     width: 195px;
   }
   #fmobile {
+    display: none;
+  }
+  .footer {
+    height: 260px;
+  }
+  div.middle {
     display: none;
   }
 }

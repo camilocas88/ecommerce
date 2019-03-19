@@ -1,48 +1,75 @@
 <?php include 'extend/header.php'; ?>
 
 
-<div class="wrapper">
+<div class="login">
     <div class="one">
         <h1>si ya estas registrado, inicia sesión</h1>
-        <form>
+        <form name="login" method="POST" action="#">
             <!-- USER NAME  -->
             <input type="text" name="mail" placeholder="Ingresa tu correo electrónico" id="mail">
-            <input type="text" name="password" placeholder="Ingresa tu Ingresa tu contraseña" id="password">
-            <input type="checkbox" id="remember_me" name="_remember_me" checked>
-            <label for="remermber_me">Recuérdame</label>
-            <a href="#">Olvidaste tu contraseña</a>
-            <input type="submit" name="login">
+            <input type="text" name="password" placeholder="Ingresa tu contraseña" id="password">
+            <div class="checkbox">
+                <input type="checkbox" class="input-remember" id="input-rememeber" />
+                <label for="input-rememeber">Recuérdame</label>
+                <a href="#">Olvidaste tu contraseña</a>
+            </div>
+            <button type="submit" class="button-blue" name="login" value="Login">INICIAR SESIÓN</button>
 
-            <p>O ingresa con</p>
-            <div class="social-login"><i class="fab fa-facebook-f"></i><a href="#">Facebook</a></div>
-            <div class="social-login"><i class="fab fa-google"></i><a href="#">Google</a></div>
+            <div class="paragraph"><hr class="hr-left"><p>O ingresa con</p><hr class="hr-right"></div>
+            <div class="social">
+                <div class="social-login left"><a href="#"><i class="fab fa-facebook-f"></i>Facebook</a></div>
+                <div class="social-login right"><a href="#"><i class="fab fa-google"></i>Google</a></div>
+            </div>
+            <hr class="center">
         </form>
     </div>
 
-    <div class="two">
-        <h1>¿ERES NUEVO CLIENTE?</h1>
-        <h2>REGÍSTRATE</h2>
-        <input type="text" name="name" placeholder="Nombre*" id="name">
-        <input type="text" name="last_name" placeholder="Apellido*" id="last_name">
-        <input type="number" name="id_card" placeholder="No. de Cédula" id="id_card">
-        <input type="text" name="email" placeholder="E-mail*" id="email">
-        <input type="text" name="password_register" placeholder="Contraseña" id="password_register">
-        <label>Ciudad</label>
-        <input type="checkbox" name="advertising" id="advertising">
-        <label for="">Acepto recibir publicidad sobre ofertas o promociones en mi correo electrónico.</label>
-        <input type="checkbox" name="terms" id="terms">
-        <label for="">Acepto los <a href="#">Términos y condiciones.</a></label>
+    <div class="middle">
         <hr>
-        <input type="checkbox" name="terms" id="terms">
-        <label for="">Registrar a nombre de empresa</label>
-        <input type="submit" name="register">
+        <h1>realiza tu compra como invitado</h1>
+        <input type="text" name="mail" placeholder="Ingresa tu correo electrónico" id="mail">
+        <button>seguir</button>
+        <hr>
+    </div>
 
-        <p>O ingresa con</p>
-        <div class="social-login"><i class="fab fa-facebook-f"></i><a href="#">Facebook</a></div>
-        <div class="social-login"><i class="fab fa-google"></i><a href="#">Google</a></div>
+    <div class="two">
+        <h1 class="h1-right">¿ERES NUEVO CLIENTE?</h1>
+        <h2>REGÍSTRATE</h2>
+        <form name="signin" method="POST">
+            <input type="text" name="name" placeholder="Nombre*" id="name">
+            <input type="text" name="last_name" placeholder="Apellido*" id="last_name">
+            <input type="text" name="id_card" placeholder="No. de Cédula" id="id_card">
+            <input type="text" name="email" placeholder="E-mail*" id="email">
+            <input type="text" name="password_register" placeholder="Contraseña" id="password_register">
+            <div class="city">
+                <label>Ciudad</label>
+                <input type="text" name="email" placeholder="Ciudad" id="email">
+            </div>
+            <div>
+                <input type="checkbox" name="advertising" id="advertising">
+                <label for="">Acepto recibir publicidad sobre ofertas o promociones en mi correo electrónico.</label>
+            </div>
+            <div>
+                <input type="checkbox" name="terms" id="terms">
+                <label for="">Acepto los <a href="#">Términos y condiciones.</a></label>
+            </div>
+            <hr class="two-center">
+            <input type="checkbox" name="comany-singin" id="terms">
+            <label for="comany-singin" class="company-singin">Registrar a nombre de empresa</label>
+            <div class="hidden-div">
+                <input type="text" name="company" placeholder="Nombre de la empresa *" id="company">
+                <input type="text" name="nit" placeholder="NIT *" id="nit">
+            </div>
 
 
+            <button type="submit" class="button-yellow" name="register" value="Submit">FINALIZAR REGISTRO</button>
 
+            <div class="paragraph"><hr class="hr-left"><p>O ingresa con</p><hr class="hr-right"></div>
+            <div class="social right">
+                <div class="social-login left"><a href="#"><i class="fab fa-facebook-f"></i>Facebook</a></div>
+                <div class="social-login right"><a href="#"><i class="fab fa-google"></i>Google</a></div>
+            </div>
+        </form>
     </div>
 </div>
 
