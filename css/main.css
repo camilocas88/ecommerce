@@ -533,14 +533,27 @@ li {
   border: none;
   padding: 7px;
   color: white;
+  cursor: pointer;
 }
 
 .one button.button-blue, .two button.button-blue {
   background: #223A6F;
 }
 
+.one button.button-blue:hover, .two button.button-blue:hover {
+  background: #3a63bd;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
 .one button.button-yellow, .two button.button-yellow {
   background: #B27E2C;
+}
+
+.one button.button-yellow:hover, .two button.button-yellow:hover {
+  background: #d09941;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .one .paragraph, .two .paragraph {
@@ -695,6 +708,7 @@ li {
   color: white;
   font-size: 10px;
   background: #223A6F;
+  cursor: pointer;
 }
 
 body {
@@ -742,7 +756,7 @@ h1, h2, h3, h4, h5, h6 {
 
 main {
   padding-bottom: 1rem;
-  min-height: calc(100% - 30%);
+  min-height: calc(100% - 20%);
   margin: 0 auto -50px;
 }
 

@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
-    <link href="css/fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="../css/fontawesome/css/all.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>La Licorera 2.0</title>
@@ -15,7 +15,7 @@
 <body>
     <header>
         <div class="loader">
-            <div class="load"><img src="img/loader/loader.gif" alt=""></div>
+            <div class="load"><img src="../img/loader/loader.gif" alt=""></div>
         </div>
         <nav class="bgnav">
             <a href="" class="bgnav_space"></a><span class="bgnav_span"></span><a href=""><i class="fal fa-phone"></i> (1) 756 0060</a><span class="bgnav_span"></span>
@@ -27,15 +27,15 @@
             <div class="menu-left">
                 <ul>
                     <li class="open-slide"><a onclick="openSlideMenu()"><i class="fal fa-bars fa-2x"></i><span class="menu_title">Menú</span></a></li>
-                    <li><a href="#"><i class="material-icons _user">account_circle</i></a></li>
+                    <li><a href="extend/login.php"><i class="material-icons _user">account_circle</i></a></li>
                     <li><a href="#"><i class="fal fa-search fa-2x"></i><span class="menu_title--left">Buscar</span></a></li>
                 </ul>
             </div>
-            <a href="#">
+            <a href="../index.php">
                 <picture>
-                    <source class="licorera_logo" type="img/logos/logo.svg" srcset="pyramid.svg">
-                    <source class="licorera_logo" type="img/logos/logo.webp" srcset="pyramid.webp">
-                    <img class="licorera_logo" src="img/logos/logo.png" alt="Logo La Licorera">
+                    <source class="licorera_logo" type="../img/logos/logo.svg" srcset="pyramid.svg">
+                    <source class="licorera_logo" type="../img/logos/logo.webp" srcset="pyramid.webp">
+                    <img class="licorera_logo" src="../img/logos/logo.png" alt="Logo La Licorera">
                 </picture>
             </a>
             <div class="menu-right">

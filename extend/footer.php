@@ -115,9 +115,9 @@
    
 
 
-<script src="js/loader.js"></script>
-<script src="js/jquery.js"></script>
-<script src="js/menu.js"></script>
+<script src="../js/loader.js"></script>
+<script src="../js/jquery.js"></script>
+<script src="../js/menu.js"></script>
 <!--JavaScript at end of body for optimized loading-->
 <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
 
