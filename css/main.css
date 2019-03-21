@@ -482,6 +482,20 @@ li {
   padding: 5px;
 }
 
+.one input.button-yellow, .two input.button-yellow {
+  background: #B27E2C;
+  border-radius: 3px;
+  border: none;
+  padding: 7px;
+  color: white;
+}
+
+.one input.button-yellow:hover, .two input.button-yellow:hover {
+  background: #d09941;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
 .one hr.center, .two hr.center {
   width: 80%;
   margin-right: 0%;
@@ -493,7 +507,7 @@ li {
 }
 
 .one .checkbox, .two .checkbox {
-  margin: 0 0 1em 4em;
+  margin: 0 0 1em 5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -517,14 +531,14 @@ li {
 
 .one .checkbox a, .two .checkbox a {
   color: #223A6F;
-  font-size: 9px;
+  font-size: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin-left: 138px;
+  margin-left: 10rem;
 }
 
 .one button, .two button {
@@ -542,16 +556,6 @@ li {
 
 .one button.button-blue:hover, .two button.button-blue:hover {
   background: #3a63bd;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-
-.one button.button-yellow, .two button.button-yellow {
-  background: #B27E2C;
-}
-
-.one button.button-yellow:hover, .two button.button-yellow:hover {
-  background: #d09941;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
@@ -585,6 +589,11 @@ li {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+}
+
+.two div.city {
+  display: -ms-grid;
+  display: grid;
 }
 
 .two div.city label {
@@ -685,6 +694,7 @@ li {
 
 .middle {
   text-align: center;
+  display: none;
 }
 
 .middle input {
@@ -826,6 +836,12 @@ main {
     grid-column: 1/1;
     text-align: center;
   }
+  .one div.checkbox, .two div.checkbox {
+    margin: 0 0 1em 2em;
+  }
+  .one div.checkbox a, .two div.checkbox a {
+    margin-left: 4rem;
+  }
   .two div.city label {
     display: block;
   }
@@ -833,6 +849,12 @@ main {
     margin-left: -41px;
     margin-right: 63px;
     margin-bottom: 17px;
+  }
+  .two input#citi {
+    margin: auto;
+  }
+  .two hr.two-center {
+    width: 100%;
   }
   .one .social .social-login.left {
     margin-left: 33px;
@@ -842,6 +864,9 @@ main {
   }
   hr.center {
     display: none;
+  }
+  div.middle {
+    display: block;
   }
 }
 
@@ -912,7 +937,7 @@ main {
   }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1367px) {
+@media only screen and (min-width: 1025px) and (max-width: 1867px) {
   .licorera_logo {
     margin: 2px 0;
     width: 195px;

@@ -48,6 +48,19 @@
     border: 0.5px solid #888888;
     border-radius: 5px;
     padding:5px;
+
+    &.button-yellow{
+      background: $secondary-color;
+      border-radius: 3px;
+      border: none;
+      padding: 7px;
+      color: white;
+      
+      &:hover{
+        background:lighten($secondary-color, 10%);
+        @include easeOut;
+      }
+    }
   }
 
   hr.center{
@@ -59,7 +72,7 @@
     color: darken($primary-color, $amount:10)
   }
   .checkbox {
-    margin: 0 0 1em 4em;
+    margin: 0 0 1em 5em;
     display: flex;
     color: $primary-color;
     // justify-content: space-between;
@@ -80,10 +93,10 @@
 
     a{
       color: $primary-color;
-      font-size: 9px;
+      font-size: 12px;
       display: flex;
       align-items: flex-end;
-      margin-left: 138px;
+      margin-left: 10rem;
     }
   }
 
@@ -102,13 +115,7 @@
         @include easeOut;
       }
     }
-    &.button-yellow{
-      background: $secondary-color;
-      &:hover{
-        background:lighten($secondary-color, 10%);
-        @include easeOut;
-      }
-    }
+    
 
     
   }
@@ -146,6 +153,7 @@
     grid-column:2/3;
 
       div.city{
+        display: grid;
         label{
           margin-right: 31px;
           color: gray;
@@ -251,6 +259,7 @@
 
   .middle{
     text-align: center;
+    display: none;
     input{
       width: 70%;
       font-weight: lighter;
