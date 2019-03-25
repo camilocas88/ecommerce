@@ -27,7 +27,7 @@
             <div class="menu-left">
                 <ul>
                     <li class="open-slide"><a onclick="openSlideMenu()"><i class="fal fa-bars fa-2x"></i><span class="menu_title">Menú</span></a></li>
-                    <li><a href="extend/login.php"><i class="material-icons _user">account_circle</i></a></li>
+                    <li><a href="extend/login.php"><i class="fal fa-user-circle"></i></a></li>
                     <li><a href="#"><i class="fal fa-search fa-2x"></i><span class="menu_title--left">Buscar</span></a></li>
                 </ul>
             </div>
@@ -68,8 +68,8 @@
             <!-- Login menu -->
             <ul class="side-menu__login">
                 <li><a class="btn-close" onclick="closeSlideMenu()"><i class="fal fa-bars fa-2x"></i>Menú</a></li>
-                <li><a href="#" class="btn-close"><i class="fal fa-user fa-2x"></i></a></li>
-                <li>Hola Camilo Mi Cuenta Cerrar Cesion</li>
+                <li><a href="#"><i class="fal fa-cocktail"></i></a></li>
+                <li>Hola Camilo Mi asdasdasdasCuenta Cerrar Cesion</li>
             </ul>
 
             <ul>

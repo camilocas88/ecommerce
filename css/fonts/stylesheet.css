@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald-Light.eot');
+    src: local('Oswald Light'), local('Oswald-Light'),
+        url('Oswald-Light.eot?#iefix') format('embedded-opentype'),
+        url('Oswald-Light.woff2') format('woff2'),
+        url('Oswald-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Frank Ruhl Libre';
+    src: url('FrankRuhlLibre-Regular.eot');
+    src: local('Frank Ruhl Libre Regular'), local('FrankRuhlLibre-Regular'),
+        url('FrankRuhlLibre-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FrankRuhlLibre-Regular.woff2') format('woff2'),
+        url('FrankRuhlLibre-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Frank Ruhl Libre';
+    src: url('FrankRuhlLibre-Bold.eot');
+    src: local('Frank Ruhl Libre Bold'), local('FrankRuhlLibre-Bold'),
+        url('FrankRuhlLibre-Bold.eot?#iefix') format('embedded-opentype'),
+        url('FrankRuhlLibre-Bold.woff2') format('woff2'),
+        url('FrankRuhlLibre-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('SourceSansPro-Regular.eot');
+    src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+        url('SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SourceSansPro-Regular.woff2') format('woff2'),
+        url('SourceSansPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('Oswald-Medium.eot');
+    src: local('Oswald Medium'), local('Oswald-Medium'),
+        url('Oswald-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Oswald-Medium.woff2') format('woff2'),
+        url('Oswald-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+

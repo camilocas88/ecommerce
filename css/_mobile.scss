@@ -14,9 +14,7 @@
     a.bgnav_space{
         display: none;
     }
-    i.material-icons._user{
-        display: none;
-    }
+    
 
     .menu-right{
         li:first-child{
@@ -40,7 +38,19 @@
 
             .menu-left li:last-child {
                 display: inline-block;
+                
             }
+
+            .menu-left {
+                .fa-user-circle, .bar{
+                    display: none;
+                  }
+                .open-slide{
+                    top: 0;
+                }
+
+            }
+            
 
             .menu_title--left{
                 position: relative;
@@ -135,6 +145,7 @@
     div.middle{
         display: block;
     }
+    
 }
 
 
@@ -143,10 +154,6 @@
     a.bgnav_space{
         display: none;
     }
-    i.material-icons._user{
-        display: none;
-    }
-
     .menu-right{
         li:first-child{
             display: none;
@@ -176,10 +183,17 @@
                 display: inline-block;
             }
 
+            .menu-left {
+                .fa-user-circle{
+                    display: none;
+                  }
+            }
+
             .menu_title--left{
                 position: relative;
                 display: flex;
             }
+            
 
             .licorera_logo{
                 width: 170px;
@@ -237,4 +251,10 @@
         div.middle{
             display: none;
         }
+}   
+
+@media only screen and (min-width : 1870px) and (max-width : 2560px){
+    header{
+        height: 18vh;
+    }
 }   

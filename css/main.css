@@ -1,4 +1,43 @@
-@import url("https://fonts.googleapis.com/css?family=Lato|Montserrat:100,200,400");
+@font-face {
+  font-family: 'Oswald';
+  src: url("fonts/Oswald-Light.eot");
+  src: local("../fonts/Oswald Light"), local("Oswald-Light"), url("../fonts/Oswald-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Oswald-Light.woff2") format("woff2"), url("../fonts/Oswald-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Frank Ruhl Libre';
+  src: url("../fonts/FrankRuhlLibre-Regular.eot");
+  src: local("../fonts/Frank Ruhl Libre Regular"), local("FrankRuhlLibre-Regular"), url("../fonts/FrankRuhlLibre-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FrankRuhlLibre-Regular.woff2") format("woff2"), url("../fonts/FrankRuhlLibre-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Frank Ruhl Libre';
+  src: url("../fonts/FrankRuhlLibre-Bold.eot");
+  src: local("../fonts/Frank Ruhl Libre Bold"), local("FrankRuhlLibre-Bold"), url("../fonts/FrankRuhlLibre-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FrankRuhlLibre-Bold.woff2") format("woff2"), url("../fonts/FrankRuhlLibre-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("fonts/SourceSansPro-Regular.eot");
+  src: local("fonts/Source Sans Pro Regular"), local("SourceSansPro-Regular"), url("fonts/SourceSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/SourceSansPro-Regular.woff2") format("woff2"), url("SourceSansPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '../fonts/Oswald';
+  src: url("../fonts/Oswald-Medium.eot");
+  src: local("../fonts/Oswald Medium"), local("Oswald-Medium"), url("../fonts/Oswald-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Oswald-Medium.woff2") format("woff2"), url("../fonts/Oswald-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
 .loader {
   position: fixed;
   z-index: 99;
@@ -94,7 +133,7 @@ header .bgnav .bgnav_span {
   font-size: x-large;
 }
 
-header nav.menu {
+header .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,50 +146,87 @@ header nav.menu {
   padding: 0 1.5rem;
 }
 
-header nav.menu .licorera_logo {
+header .menu .licorera_logo {
   position: relative;
   left: 85px;
   margin: 5px 0;
 }
 
-header nav.menu .menu-left li:last-child {
+header .menu .menu-left li:last-child {
   display: none;
 }
 
-header nav.menu ul {
+header .menu .menu-left .open-slide {
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+}
+
+header .menu .menu-left .open-slide .menu_title {
+  font-size: 15px;
+  position: absolute;
+  top: 25px;
+  left: 0px;
+}
+
+header .menu .menu-left .open-slide .menu-btn {
+  position: relative;
+  left: -4px;
+  top: 4px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+header .menu .menu-left .open-slide .menu-btn .btn-line {
+  width: 28px;
+  height: 1.5px;
+  margin: 0 0 6px 0;
+  background: #223A6F;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+header .menu .menu-left .open-slide .menu-btn .btn-line:last-child {
+  width: 20px;
+}
+
+header .menu .menu-right .fal {
+  margin-left: 10px;
+}
+
+header .menu ul {
   margin: 0;
   padding: 0;
 }
 
-header nav.menu ul a {
-  font-size: .8rem;
+header .menu ul a {
+  font-size: 16px;
 }
 
-header nav.menu ul li {
+header .menu ul li {
   display: inline-block;
   padding: 0 5px;
 }
 
-header nav.menu ul ._user {
+header .menu ul .fal {
+  font-size: 22px;
   position: relative;
-  top: -9px;
-  font-size: 28px;
+  top: 4px;
 }
 
-header .menu_title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: initial;
-  -webkit-box-direction: initial;
-      -ms-flex-direction: initial;
-          flex-direction: initial;
-  font-size: 9px;
+header .menu ul ._user {
+  position: relative;
+  margin-left: 10px;
 }
 
-header .fa-bars:before {
-  border-right: 1px solid;
-  padding-right: 14px;
+header .menu ul .bar {
+  content: '';
+  position: absolute;
+  width: 0.5px;
+  height: 18px;
+  top: 72px;
+  background-color: #223A6F;
 }
 
 .side-nav {
@@ -728,13 +804,11 @@ body {
 }
 
 html {
-  font-family: 'lato', sans-serif;
+  font-family: Source Sans Pro, sans-serif;
   height: 100%;
   margin: 0;
   background: #F2F2F2;
   position: static;
-  display: -ms-grid;
-  display: grid;
   -ms-grid-rows: auto 1fr auto;
       grid-template-rows: auto 1fr auto;
 }
@@ -752,11 +826,11 @@ ul {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Source Sans Pro;
   font-weight: bold;
 }
 
-.banner img {
+.banner {
   height: 65vh;
 }
 
@@ -783,9 +857,6 @@ main {
   a.bgnav_space {
     display: none;
   }
-  i.material-icons._user {
-    display: none;
-  }
   .menu-right li:first-child {
     display: none;
   }
@@ -804,6 +875,12 @@ main {
   }
   header nav.menu .menu-left li:last-child {
     display: inline-block;
+  }
+  header nav.menu .menu-left .fa-user-circle, header nav.menu .menu-left .bar {
+    display: none;
+  }
+  header nav.menu .menu-left .open-slide {
+    top: 0;
   }
   header nav.menu .menu_title--left {
     position: relative;
@@ -874,9 +951,6 @@ main {
   a.bgnav_space {
     display: none;
   }
-  i.material-icons._user {
-    display: none;
-  }
   .menu-right li:first-child {
     display: none;
   }
@@ -898,6 +972,9 @@ main {
   }
   header nav.menu .menu-left li:last-child {
     display: inline-block;
+  }
+  header nav.menu .menu-left .fa-user-circle {
+    display: none;
   }
   header nav.menu .menu_title--left {
     position: relative;
@@ -950,6 +1027,12 @@ main {
   }
   div.middle {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 1870px) and (max-width: 2560px) {
+  header {
+    height: 18vh;
   }
 }
 /*# sourceMappingURL=main.css.map */

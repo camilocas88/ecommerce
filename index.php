@@ -7,8 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
     <link href="css/fontawesome/css/all.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>La Licorera 2.0</title>
 </head>
 
@@ -26,8 +24,15 @@
         <nav class="menu">
             <div class="menu-left">
                 <ul>
-                    <li class="open-slide"><a onclick="openSlideMenu()"><i class="fal fa-bars fa-2x"></i><span class="menu_title">Menú</span></a></li>
-                    <li><a href="extend/login.php"><i class="material-icons _user">account_circle</i></a></li>
+                    <li class="open-slide"><a onclick="openSlideMenu()">
+                    <div class="menu-btn">
+                        <div class="btn-line"></div>
+                        <div class="btn-line"></div>
+                        <div class="btn-line"></div>
+                    </div>
+                    <span class="menu_title">Menú</span></a></li>
+                    <li><div class="bar"></div></li>
+                    <li><a href="extend/login.php"><i class="fal fa-user-circle _user"></i></a></li>
                     <li><a href="#"><i class="fal fa-search fa-2x"></i><span class="menu_title--left">Buscar</span></a></li>
                 </ul>
             </div>
@@ -40,10 +45,11 @@
             </a>
             <div class="menu-right">
                 <ul>
-
-                    <li><a href="#"><i class="far fa-search fa-2x --left"></i><span class="menu_title--left">Buscar</span></a></li>
-                    <li><a href="#"><i class="far fa-clock fa-2x --left"></i><span class="menu_title--left">Tiempo</span></a></li>
-                    <li><a href="#"><i class="far fa-shopping-cart fa-2x --left"></i><span class="menu_title--left">Carrito</span></a></li>
+                    <li><a href="#"><span class="menu_title--left">Buscar</span><i class="fal fa-search"></i></a></li>
+                    <li><div class="bar"></div></li>
+                    <li><a href="#"><span class="menu_title--left">Tiempo</span><i class="fal fa-clock"></i></a></li>
+                    <li><div class="bar"></div></li>                    
+                    <li><a href="#"><span class="menu_title--left">Carrito</span><i class="fal fa-shopping-cart"></i></a></li>
                 </ul>
 
             </div>
@@ -68,7 +74,7 @@
             <!-- Login menu -->
             <ul class="side-menu__login">
                 <li><a class="btn-close" onclick="closeSlideMenu()"><i class="fal fa-bars fa-2x"></i>Menú</a></li>
-                <li><a href="#" class="btn-close"><i class="fal fa-user fa-2x"></i></a></li>
+                <li><a href="#" class="btn-close"><i class="fal fa-user-circle fa-2x"></i></a></li>
                 <li>Hola Camilo Mi Cuenta Cerrar Cesion</li>
             </ul>
 
@@ -98,7 +104,7 @@
                         <li><a class="list --right" href="">Cigarrillos</a></li>
                     </ul>
                 <li><a href="#"><i class="fal fa-thumbs-up"></i> Experiencias <i class="fal fa-chevron-right"></i> </a></li>
-                <li><a href="#"><i class="fas fa-glass-martini"></i> Recetas de Cócteles <i class="fal fa-chevron-right"></i> </a></li>
+                <li><a href="#"><i class="fal fa-cocktail"></i> Recetas de Cócteles <i class="fal fa-chevron-right"></i> </a></li>
                 <li><a href="#"><i class="fal fa-gift"></i> Regalos <i class="fal fa-chevron-right"></i> </a></li>
                 <li><a href="#"><i class="fal fa-tags"></i> Promociones <i class="fal fa-chevron-right"></i> </a></li>
                 <li><a href="#"><i class="fal fa-envelope"></i> Contacto <i class="fal fa-chevron-right"></i> </a></li>
@@ -112,45 +118,45 @@
     </header>
 
     <main class=container>
-    <section class="banner">
-    <img src="img/Banner1.jpg" style="width:100%" alt="">
-</section>
-<section class="banner_bottom">
-    <h1>Lorem, ipsum dolor.</h1>
-</section>
+        <section class="banner">
+            <img src="img/Banner1.jpg" style="width:100%" alt="">
+        </section>
+        <section class="banner_bottom">
+            <h1>Lorem, ipsum dolor.</h1>
+        </section>
 
-    <h1>Contenido</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro qui praesentium inventore laboriosam officia autem, commodi placeat expedita hic minima, nemo doloribus recusandae numquam provident iusto voluptates, adipisci cumque veniam.
-        Eum dolores doloribus eligendi quis distinctio rem minus ut necessitatibus, nulla magni doloremque inventore nisi sint ex ducimus sed exercitationem veritatis voluptatum voluptatibus, beatae possimus recusandae est itaque vero? Quod.
-        Atque, optio? Fugiat laboriosam nam porro itaque, minus, animi aspernatur est quas, magnam enim assumenda labore vel sequi nostrum rerum iusto eveniet doloribus? Excepturi explicabo dolores corrupti mollitia cupiditate atque.
-        Harum officia sed labore quaerat voluptatem consequatur nulla facere perferendis inventore repudiandae beatae aspernatur deleniti aliquam blanditiis omnis minus sit voluptate qui dolores, alias tempora vitae veritatis veniam? Explicabo, quidem.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro qui praesentium inventore laboriosam officia autem, commodi placeat expedita hic minima, nemo doloribus recusandae numquam provident iusto voluptates, adipisci cumque veniam.
-        Eum dolores doloribus eligendi quis distinctio rem minus ut necessitatibus, nulla magni doloremque inventore nisi sint ex ducimus sed exercitationem veritatis voluptatum voluptatibus, beatae possimus recusandae est itaque vero? Quod.
-        Atque, optio? Fugiat laboriosam nam porro itaque, minus, animi aspernatur est quas, magnam enim assumenda labore vel sequi nostrum rerum iusto eveniet doloribus? Excepturi explicabo dolores corrupti mollitia cupiditate atque.
-        Harum officia sed labore quaerat voluptatem consequatur nulla facere perferendis inventore repudiandae beatae aspernatur deleniti aliquam blanditiis omnis minus sit voluptate qui dolores, alias tempora vitae veritatis veniam? Explicabo, quidem.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro qui praesentium inventore laboriosam officia autem, commodi placeat expedita hic minima, nemo doloribus recusandae numquam provident iusto voluptates, adipisci cumque veniam.
-        Eum dolores doloribus eligendi quis distinctio rem minus ut necessitatibus, nulla magni doloremque inventore nisi sint ex ducimus sed exercitationem veritatis voluptatum voluptatibus, beatae possimus recusandae est itaque vero? Quod.
-        Atque, optio? Fugiat laboriosam nam porro itaque, minus, animi aspernatur est quas, magnam enim assumenda labore vel sequi nostrum rerum iusto eveniet doloribus? Excepturi explicabo dolores corrupti mollitia cupiditate atque.
-        Harum officia sed labore quaerat voluptatem consequatur nulla facere perferendis inventore repudiandae beatae aspernatur deleniti aliquam blanditiis omnis minus sit voluptate qui dolores, alias tempora vitae veritatis veniam? Explicabo, quidem.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro qui praesentium inventore laboriosam officia autem, commodi placeat expedita hic minima, nemo doloribus recusandae numquam provident iusto voluptates, adipisci cumque veniam.
-        Eum dolores doloribus eligendi quis distinctio rem minus ut necessitatibus, nulla magni doloremque inventore nisi sint ex ducimus sed exercitationem veritatis voluptatum voluptatibus, beatae possimus recusandae est itaque vero? Quod.
-        Atque, optio? Fugiat laboriosam nam porro itaque, minus, animi aspernatur est quas, magnam enim assumenda labore vel sequi nostrum rerum iusto eveniet doloribus? Excepturi explicabo dolores corrupti mollitia cupiditate atque.
-        Harum officia sed labore quaerat voluptatem consequatur nulla facere perferendis inventore repudiandae beatae aspernatur deleniti aliquam blanditiis omnis minus sit voluptate qui dolores, alias tempora vitae veritatis veniam? Explicabo, quidem.</p>
+        <h1>Contenido</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro qui praesentium inventore laboriosam officia autem, commodi placeat expedita hic minima, nemo doloribus recusandae numquam provident iusto voluptates, adipisci cumque veniam.
+            Eum dolores doloribus eligendi quis distinctio rem minus ut necessitatibus, nulla magni doloremque inventore nisi sint ex ducimus sed exercitationem veritatis voluptatum voluptatibus, beatae possimus recusandae est itaque vero? Quod.
+            Atque, optio? Fugiat laboriosam nam porro itaque, minus, animi aspernatur est quas, magnam enim assumenda labore vel sequi nostrum rerum iusto eveniet doloribus? Excepturi explicabo dolores corrupti mollitia cupiditate atque.
+            Harum officia sed labore quaerat voluptatem consequatur nulla facere perferendis inventore repudiandae beatae aspernatur deleniti aliquam blanditiis omnis minus sit voluptate qui dolores, alias tempora vitae veritatis veniam? Explicabo, quidem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro qui praesentium inventore laboriosam officia autem, commodi placeat expedita hic minima, nemo doloribus recusandae numquam provident iusto voluptates, adipisci cumque veniam.
+            Eum dolores doloribus eligendi quis distinctio rem minus ut necessitatibus, nulla magni doloremque inventore nisi sint ex ducimus sed exercitationem veritatis voluptatum voluptatibus, beatae possimus recusandae est itaque vero? Quod.
+            Atque, optio? Fugiat laboriosam nam porro itaque, minus, animi aspernatur est quas, magnam enim assumenda labore vel sequi nostrum rerum iusto eveniet doloribus? Excepturi explicabo dolores corrupti mollitia cupiditate atque.
+            Harum officia sed labore quaerat voluptatem consequatur nulla facere perferendis inventore repudiandae beatae aspernatur deleniti aliquam blanditiis omnis minus sit voluptate qui dolores, alias tempora vitae veritatis veniam? Explicabo, quidem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro qui praesentium inventore laboriosam officia autem, commodi placeat expedita hic minima, nemo doloribus recusandae numquam provident iusto voluptates, adipisci cumque veniam.
+            Eum dolores doloribus eligendi quis distinctio rem minus ut necessitatibus, nulla magni doloremque inventore nisi sint ex ducimus sed exercitationem veritatis voluptatum voluptatibus, beatae possimus recusandae est itaque vero? Quod.
+            Atque, optio? Fugiat laboriosam nam porro itaque, minus, animi aspernatur est quas, magnam enim assumenda labore vel sequi nostrum rerum iusto eveniet doloribus? Excepturi explicabo dolores corrupti mollitia cupiditate atque.
+            Harum officia sed labore quaerat voluptatem consequatur nulla facere perferendis inventore repudiandae beatae aspernatur deleniti aliquam blanditiis omnis minus sit voluptate qui dolores, alias tempora vitae veritatis veniam? Explicabo, quidem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro qui praesentium inventore laboriosam officia autem, commodi placeat expedita hic minima, nemo doloribus recusandae numquam provident iusto voluptates, adipisci cumque veniam.
+            Eum dolores doloribus eligendi quis distinctio rem minus ut necessitatibus, nulla magni doloremque inventore nisi sint ex ducimus sed exercitationem veritatis voluptatum voluptatibus, beatae possimus recusandae est itaque vero? Quod.
+            Atque, optio? Fugiat laboriosam nam porro itaque, minus, animi aspernatur est quas, magnam enim assumenda labore vel sequi nostrum rerum iusto eveniet doloribus? Excepturi explicabo dolores corrupti mollitia cupiditate atque.
+            Harum officia sed labore quaerat voluptatem consequatur nulla facere perferendis inventore repudiandae beatae aspernatur deleniti aliquam blanditiis omnis minus sit voluptate qui dolores, alias tempora vitae veritatis veniam? Explicabo, quidem.</p>
 
-</main>
+    </main>
 
-<!-- -------------comienza el footer----------------------------- -->
+    <!-- -------------comienza el footer----------------------------- -->
 
-<footer id="desktop" class="footer">
+    <footer id="desktop" class="footer">
         <div class="footer-container">
-            
+
             <ul class="footer-nav">
                 <h3>HORARIOS BOGOTÁ</h3>
                 <li><a href="#">Lunes a Jueves | 9am a 10pm</a></li>
                 <li><a href="#">Viernes | 9am a 4am</a></li>
-                <li><a href="#">Sabado  | 11am a 12am</a></li>
+                <li><a href="#">Sabado | 11am a 12am</a></li>
                 <li><a href="#">Domingo | 2pm a 9pm</a></li>
-                
+
             </ul>
             <ul class="footer-secondary-nav">
                 <h3>TIEMPO DE ENTREGA</h3>
@@ -171,7 +177,7 @@
                 <li><a href="#">Cobertura Medellín</a></li>
                 <li><a href="#">Cobertura Cartagena</a></li>
                 <li><a href="#">Cobertura Resto del País</a></li>
-                
+
             </ul>
             <div class="social-networks">
                 <h3>CONTACTO</h3>
@@ -194,38 +200,38 @@
                 <div class="youtube">
                     <i class="fab fa-youtube fa-2x"></i>
                 </div>
-                
+
             </div><!-- .social-networks-->
         </div><!-- .footer-container -->
     </footer><!-- .footer -->
 
-     <!-- Mobile -->
-     <footer id="fmobile">
+    <!-- Mobile -->
+    <footer id="fmobile">
         <div class="footer_mobile">
             <ul class="menu-footer despegable">
                 <li><a><i class="icon left fal fa-calendar-alt"></i> Horarios Bogota <i class="icon right fal fa-chevron-right"></i></a>
-                  <ul>
-                    <li>Lunes a Jueves | 9:00am - 10:00pm</li>
-                    <li>Viernes | 9:00am - 4:00am</li>
-                    <li>Sabado | 11:00am - 12:00am</li>
-                    <li>Domingo | 2:00pm - 8:00am</li>
-                  </ul>
-                </li>
-                  
-                <li ><a ><i class="icon left fal fa-clock"></i>Tiempo de entrega <i class="icon right fal fa-chevron-right"></i></a>
                     <ul>
-                      <li>Pago contra entrega 30 min</li>
-                      <li>Pago Online 2 dias</li>
+                        <li>Lunes a Jueves | 9:00am - 10:00pm</li>
+                        <li>Viernes | 9:00am - 4:00am</li>
+                        <li>Sabado | 11:00am - 12:00am</li>
+                        <li>Domingo | 2:00pm - 8:00am</li>
                     </ul>
                 </li>
-                    
-                <li ><a ><i class="icon left fal fa-globe"></i>Cobertura <i class="icon right fal fa-chevron-right"></i></a>
-                  <ul>
-                      <img src="img/mapa.png" alt="">
-                  </ul>
+
+                <li><a><i class="icon left fal fa-clock"></i>Tiempo de entrega <i class="icon right fal fa-chevron-right"></i></a>
+                    <ul>
+                        <li>Pago contra entrega 30 min</li>
+                        <li>Pago Online 2 dias</li>
+                    </ul>
+                </li>
+
+                <li><a><i class="icon left fal fa-globe"></i>Cobertura <i class="icon right fal fa-chevron-right"></i></a>
+                    <ul>
+                        <img src="img/mapa.png" alt="">
+                    </ul>
                 </li>
             </ul>
-            <ul class="menu-footer" >
+            <ul class="menu-footer">
                 <li><a class="text-white" href="">Blog</a></li>
                 <li><a class="text-white" href="">Nosotros</a></li>
                 <li><a class="text-white" href="">Franqucias</a></li>
@@ -253,18 +259,19 @@
     </div><!-- .bottom-line -->
 
 
-   
 
 
-<script src="js/loader.js"></script>
-<script src="js/jquery.js"></script>
-<script src="js/menu.js"></script>
-<!--JavaScript at end of body for optimized loading-->
-<!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+
+    <script src="js/loader.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/menu.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
 
 
-<!-- //pops ups -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> 
+    <!-- //pops ups -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
 </body>
+
 </html> 

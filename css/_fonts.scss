@@ -1,1 +1,55 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat:100,200,400');
+@font-face {
+	font-family: 'Oswald';
+	src: url('fonts/Oswald-Light.eot');
+	src: local('../fonts/Oswald Light'), local('Oswald-Light'),
+	    url('../fonts/Oswald-Light.eot?#iefix') format('embedded-opentype'),
+	    url('../fonts/Oswald-Light.woff2') format('woff2'),
+	    url('../fonts/Oswald-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+ }
+ 
+ @font-face {
+	font-family: 'Frank Ruhl Libre';
+	src: url('../fonts/FrankRuhlLibre-Regular.eot');
+	src: local('../fonts/Frank Ruhl Libre Regular'), local('FrankRuhlLibre-Regular'),
+	    url('../fonts/FrankRuhlLibre-Regular.eot?#iefix') format('embedded-opentype'),
+	    url('../fonts/FrankRuhlLibre-Regular.woff2') format('woff2'),
+	    url('../fonts/FrankRuhlLibre-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+ }
+ 
+ @font-face {
+	font-family: 'Frank Ruhl Libre';
+	src: url('../fonts/FrankRuhlLibre-Bold.eot');
+	src: local('../fonts/Frank Ruhl Libre Bold'), local('FrankRuhlLibre-Bold'),
+	    url('../fonts/FrankRuhlLibre-Bold.eot?#iefix') format('embedded-opentype'),
+	    url('../fonts/FrankRuhlLibre-Bold.woff2') format('woff2'),
+	    url('../fonts/FrankRuhlLibre-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+ }
+ 
+ @font-face {
+	font-family: 'Source Sans Pro';
+	src: url('fonts/SourceSansPro-Regular.eot');
+	src: local('fonts/Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+	    url('fonts/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+	    url('fonts/SourceSansPro-Regular.woff2') format('woff2'),
+	    url('SourceSansPro-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+ }
+ 
+ @font-face {
+	font-family: '../fonts/Oswald';
+	src: url('../fonts/Oswald-Medium.eot');
+	src: local('../fonts/Oswald Medium'), local('Oswald-Medium'),
+	    url('../fonts/Oswald-Medium.eot?#iefix') format('embedded-opentype'),
+	    url('../fonts/Oswald-Medium.woff2') format('woff2'),
+	    url('../fonts/Oswald-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+ }
+ 
