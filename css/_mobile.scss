@@ -251,10 +251,20 @@
         div.middle{
             display: none;
         }
+
+        .bgnav_space{
+            width: 30%;    
+          }
 }   
 
 @media only screen and (min-width : 1870px) and (max-width : 2560px){
     header{
         height: 18vh;
     }
+
+    // .bar{
+    //     top: 85px;
+    // }
+
+    
 }   
