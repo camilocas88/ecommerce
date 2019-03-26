@@ -24,16 +24,16 @@
         <nav class="menu">
             <div class="menu-left">
                 <ul>
-                    <li class="open-slide"><a onclick="openSlideMenu()">
+                    <li class="open-slide"><a onclick="openSlideMenu('side-menu')">
                     <div class="menu-btn">
                         <div class="btn-line"></div>
                         <div class="btn-line"></div>
                         <div class="btn-line"></div>
                     </div>
-                    <span class="menu_title">Menú</span></a></li>
-                    <li><div class="bar"></div></li>
+                    <span class="titleMenu">Menú</span></a></li>
+                    <li class="bar_li"><div class="bar"></div></li>
                     <li><a href="extend/login.php"><i class="fal fa-user-circle _user"></i></a></li>
-                    <li><a href="#"><i class="fal fa-search fa-2x"></i><span class="menu_title--left">Buscar</span></a></li>
+                    <li><a href="#"><i class="fal fa-search fa-2x"></i><span class="menu_title">Buscar</span></a></li>
                 </ul>
             </div>
             <a href="#">
@@ -46,10 +46,10 @@
             <div class="menu-right">
                 <ul>
                     <li><a href="#"><span class="menu_title--left">Buscar</span><i class="fal fa-search"></i></a></li>
-                    <li><div class="bar"></div></li>
-                    <li><a href="#"><span class="menu_title--left">Tiempo</span><i class="fal fa-clock"></i></a></li>
-                    <li><div class="bar"></div></li>                    
-                    <li><a href="#"><span class="menu_title--left">Carrito</span><i class="fal fa-shopping-cart"></i></a></li>
+                    <li class="bar_li"><div class="bar"></div></li>
+                    <li><a href="#"><span class="menu_title--left">Tiempo</span><i class="fal fa-clock"></i><span class="menu_title--right">Tiempo</span></a></li>
+                    <li class="bar_li"><div class="bar"></div></li>                    
+                    <li><a href="#"><span class="menu_title--left">Carrito</span><i class="fal fa-shopping-cart"></i><span class="menu_title--right">Carrito</span></a></li>
                 </ul>
 
             </div>
@@ -60,28 +60,36 @@
             <!-- Location Menu -->
             <ul class="side-menu-ul location">
                 <li class="location"><a href="#"><i class="fal 
-                fa-map-marker-alt"></i> Ciudad <i class="fal fa-chevron-right"></i></a>
-                    <ul>
-                        <li><a href="#">Bucaramanga</a></li>
-                        <li><a href="#">Cartagena</a></li>
-                        <li><a href="#">Cali</a></li>
-                        <li><a href="#">Medellín</a></li>
-                        <li><a href="#">Santa Marta</a></li>
+                fa-map-marker-alt"></i> Ciudad <i class="fal fa-chevron-down"></i></a>
+                    <ul class="location-block">
+                        <li><a class="-first" href="#">Bucaramanga</a><div class="line-btn"></div></li>
+                        <li><a class="-first" href="#">Cartagena</a><div class="line-btn"></div></li>
+                        <li><a class="-first" href="#">Cali</a><div class="line-btn"></div></li>
+                        <li><a class="-first" href="#">Medellín</a><div class="line-btn"></div></li>
+                        <li><a class="-last" href="#">Santa Marta</a><div class="last-btn"></div></li>
                     </ul>
                 </li>
             </ul>
 
             <!-- Login menu -->
             <ul class="side-menu__login">
-                <li><a class="btn-close" onclick="closeSlideMenu()"><i class="fal fa-bars fa-2x"></i>Menú</a></li>
-                <li><a href="#" class="btn-close"><i class="fal fa-user-circle fa-2x"></i></a></li>
-                <li>Hola Camilo Mi Cuenta Cerrar Cesion</li>
+            <li class="open-slide"><a class="btn_menu" onclick="closeSlideMenu('side-menu')">
+                    <div class="menu-btn side">
+                        <div class="btn-line side"></div>
+                        <div class="btn-line side"></div>
+                        <div class="btn-line side"></div>
+                    </div>
+                    <span class="menu_title">Menú</span></a></li>
+                <li class="bar_li"><div class="bar"></div></li>
+
+                <li><a href="#" class="btn-close"><i class="fal fa-user-circle"></i></a></li>
+                <li>Bienvenido <br>Ingresa a tu Cuenta Cerrar Cesion</li>
             </ul>
 
             <ul>
                 <!-- ariculos -->
-                <li class="side-menu-ul"><a href="#"><i class="fal fa-list-ul"></i> Productos <i class="fal fa-chevron-right"></i></a>
-                    <ul>
+                <li class="side-menu-ul"><a class="line_buttom" href="#"><i class="fal fa-list-ul"></i> Productos <i class="fal fa-chevron-down"></i></a>
+                    <ul class="products">
                         <li><a class="list" href="">Aguardiente</a></li>
                         <li><a class="list" href="">Brandy-Cognac</a></li>
                         <li><a class="list" href="">Cerveza</a></li>
@@ -96,18 +104,18 @@
                         <li><a class="list" href="">Vino</a></li>
                         <li><a class="list" href="">Vodka</a></li>
                         <li><a class="list" href="">Whisky</a></li>
-                        <hr>
+                        <hr class="middle_hr">
                         <li><a class="list --right" href="">No Alcohólicas</a></li>
                         <li><a class="list --right" href="">Otros Productos</a></li>
                         <li><a class="list --right" href="">Utensilios</a></li>
                         <li><a class="list --right" href="">Snaks</a></li>
                         <li><a class="list --right" href="">Cigarrillos</a></li>
                     </ul>
-                <li><a href="#"><i class="fal fa-thumbs-up"></i> Experiencias <i class="fal fa-chevron-right"></i> </a></li>
-                <li><a href="#"><i class="fal fa-cocktail"></i> Recetas de Cócteles <i class="fal fa-chevron-right"></i> </a></li>
-                <li><a href="#"><i class="fal fa-gift"></i> Regalos <i class="fal fa-chevron-right"></i> </a></li>
-                <li><a href="#"><i class="fal fa-tags"></i> Promociones <i class="fal fa-chevron-right"></i> </a></li>
-                <li><a href="#"><i class="fal fa-envelope"></i> Contacto <i class="fal fa-chevron-right"></i> </a></li>
+                <li><a class="line_buttom" href="#"><i class="fal fa-thumbs-up"></i> Experiencias <i class="fal fa-chevron-right"></i> </a></li>
+                <li><a class="line_buttom" href="#"><i class="fal fa-glass-martini"></i> Recetas de Cócteles <i class="fal fa-chevron-right"></i> </a></li>
+                <li><a class="line_buttom" href="#"><i class="fal fa-gift"></i> Regalos <i class="fal fa-chevron-right"></i> </a></li>
+                <li><a class="line_buttom" href="#"><i class="fal fa-tags"></i> Promociones <i class="fal fa-chevron-right"></i> </a></li>
+                <li><a class="line_buttom" href="#"><i class="fal fa-envelope"></i> Contacto <i class="fal fa-chevron-right"></i> </a></li>
             </ul>
 
             <ul class="side-menu__bottom">
@@ -121,7 +129,7 @@
         <section class="banner">
             <img src="img/Banner1.jpg" style="width:100%" alt="">
         </section>
-        <section class="banner_bottom">
+        <section class="banner_bottom"`>
             <h1>Lorem, ipsum dolor.</h1>
         </section>
 

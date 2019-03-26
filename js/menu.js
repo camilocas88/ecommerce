@@ -1,16 +1,21 @@
 // --------------------------------- Menu ----------------------------------
 
 function openSlideMenu(){
-    document.getElementById('side-menu').style.width = '25%';
-    // document.getElementById('side-menu').style.height = '600px';
+    document.querySelector('.side-nav').style.display = 'block';
+    
   }
 
   function closeSlideMenu(){
-    document.getElementById('side-menu').style.width = '0';
+    document.querySelector('.side-nav').style.display = 'none';
   }
 
+  // function toggle_visibility(id) {
+  //   let e = document.getElementById(id);
+  //   e.style.display = ((e.style.display!='none') ? 'none' : 'block');
+  //   }
+
 // --------------------------------- Sub Menu ----------------------------------
-const chevron = document.querySelectorAll('.fa-chevron-right')
+const chevron = document.querySelectorAll('.fa-chevron-down')
 const lists = document.querySelectorAll('.side-menu-ul')
 const subMenu = document.querySelectorAll('.side-menu-ul ul')
 
@@ -18,13 +23,13 @@ for (let i = 0; i < lists.length; i++) {
   let showMenu = false
         lists[i].addEventListener("click", ()=> {
           if(!showMenu){
-            chevron[i].classList.remove("fa-chevron-right")
-            chevron[i].classList.add("fa-chevron-down")
+            chevron[i].classList.remove("fa-chevron-down")
+            chevron[i].classList.add("fa-chevron-up")
             subMenu[i].style.display ="block"
             showMenu=true
           }else{
-            chevron[i].classList.remove("fa-chevron-down")
-            chevron[i].classList.add("fa-chevron-right")
+            chevron[i].classList.remove("fa-chevron-up")
+            chevron[i].classList.add("fa-chevron-down")
             subMenu[i].style.display ="none"
             showMenu=false
           }

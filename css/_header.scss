@@ -1,10 +1,36 @@
 header {
     background: white;
-    height: 20vh;
+    height: 22vh;
 
     
     a{
       color:$primary-color;
+    }
+
+    
+
+    .menu-btn{
+      position: relative;
+      left: 2px;
+      top: 4px;
+      cursor: pointer;
+      @include easeOut;
+
+      .btn-line{
+        width: 28px;
+        height: 1.5px;
+        margin: 0 0 6px 0;
+        background: $primary-color;
+        @include easeOut;
+
+        &.side{
+          background: white;
+        }
+
+        &:last-child{
+          width: 20px
+        }
+      }
     }
 
 
@@ -13,28 +39,30 @@ header {
       background-color: #888888;
       display: flex;
       justify-content: space-between; 
-      height: 37px;
+      height: 36px;
       width: 100%;
     
       a, i{ 
           color: white;
-          font-size: 1.5rem;
+          font-size: 1.1rem;
           margin: 0;
-          margin-top: 3px;
+          letter-spacing: 2px;
+          margin-top: 4px;
+          
 
           .fal{
-            font-size: 1.2rem;
+            font-size: 1rem;
             margin-right: 5px;
           }
     
           .fa-whatsapp{
             color: #4FCE5D;
-            font-size: 1.2rem;
+            font-size: 1rem;
             margin-right: 5px;
           }
       }
     .bgnav_space{
-      width: 19%;    
+      width: 47vh;    
     }
       .bgnav_span{ 
         border: 1px solid white;
@@ -56,7 +84,7 @@ header {
         .licorera_logo{
           position: relative;
           // display: flex;
-          left: 85px;
+          left: 103px;
           margin: 5px 0;
         }
 
@@ -65,10 +93,15 @@ header {
         }
 
         .menu-left{
+          position: relative;
+          top: -10px;
+
           .open-slide{
             position: relative;
-            top: 5px;
+            top: 21px;
             margin-right: 10px;
+            
+            
 
             .menu_title{
               // display: flex;
@@ -78,25 +111,7 @@ header {
               left: 0px;
           }
 
-            .menu-btn{
-              position: relative;
-              left: -4px;
-              top: 4px;
-              cursor: pointer;
-              @include easeOut;
 
-              .btn-line{
-                width: 28px;
-                height: 1.5px;
-                margin: 0 0 6px 0;
-                background: $primary-color;
-                @include easeOut;
-
-                &:last-child{
-                  width: 20px
-                }
-              }
-            }
           }
           
 
@@ -107,6 +122,9 @@ header {
         .menu-right{
           .fal{
             margin-left: 10px;
+          }
+          .menu_title--right{
+            display: none;
           }
         }
         ul{
@@ -136,7 +154,7 @@ header {
             .bar{
               content: '';
               position: relative;
-              width: 0.6px;
+              width: .6px;
               height: 18px;
               top: 4px;
               background-color: $primary-color;
@@ -152,56 +170,73 @@ header {
 
 .side-nav{
     height: 100%;
-    width: 0;
+    width: 25vw;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
-    opacity: 0.8;
-    overflow-y:auto;
+    background-color: #303030;
+    opacity: 0.9;
+    overflow:hidden;
+    display: none;
     @include easeOut;
     
 
     .side-menu-ul ul{ 
       display: none;
+      @include easeOut;
     }
     
 
-    // .side-menu-ul li:hover ul{
-    //   display: block;
-    // }
+    
 
     ul{
         padding: 0;
         margin: 0;
+
+        &.products{
+          padding: 0 1em;
+        }
+    }
+    .middle_hr{
+      width: 85%;
     }
 
     a{
         padding: 10px 10px 10px 30px;
         text-decoration: none;
-        font-size: 17px;
+        font-size: 1em;
         color: #ccc;
         display: block;
         @include easeOut;
 
-        .fa-chevron-right{
-            float: right;
-        }
-        .fa-chevron-down{
-            float: right;
+        &.--btn{
+          border:  none;
         }
 
-        &:not(.btn-close){
-          border-bottom: 2px solid;
-          height: 12px;
-          
+        .fa-chevron-right, .fa-chevron-down, .fa-chevron-up{
+          position: relative;
+          float: right;
+          right: 20px;
+        }
+
+        &.line_buttom{
+          border-bottom: .5px solid gray;
+        }
+
+        
+
+        &:not(.btn-close):not(.btn_menu){
+          // border-bottom: .5px solid;
+          height: 18px;
+          padding-left: 2vw;
         }
         
         &.list{
             border: none;
             font-size: 0.8rem;
             padding: 2px 40px;
+            text-decoration: underline;
 
             &.--right{
                 display: flex;
@@ -221,29 +256,82 @@ header {
           top: 0px;
         }
 
+        
+
         ul a{
-          font-size: 15px;
+          font-size: 1.1em;
           display: flex;
           flex-direction: column;
           align-items: flex-end;
+
+          &.-last{
+            border-bottom: 0;
+          }
+         
+
+          &.-first{
+            border: none;
+
+            
+          }
         }
+        .location-block{
+          position: relative;
+          right: 50px;
+
+          .line-btn{
+            border-bottom: solid 1px gray;
+            width: 70%;
+            position: relative;
+            left: 84px;
+          }
+        }
+        
     }
+
+    
 
     .side-menu__login{
       display: flex;
       justify-content: space-between;
-      padding-right: 20px;
-      margin-top: 8px;p
+      padding-right: 1vw;
+      padding-top: 20px;
 
       li{
           color: white;
-          font-size: 12px;
+          font-size: 1em;
+          position: relative;
+          top: 4px;
       }
+
+      .bar{
+        content: '';
+        position: relative;
+        width: 1.6px;
+        height: 18px;
+        top: 15px;
+        left: 11px;
+        background-color:white;
+      }
+      
+      .menu_title{
+        position: relative;
+        
+        
+      }
+      .fal{
+        position: relative;
+        left: -7px;
+        font-size: 2em;
+      }
+
+
     }
     
     .btn-close{
-      display: -moz-inline-grid;
       font-size: 12px;
+      position: relative;
+      left: 9px;
     }
 
     
@@ -252,7 +340,7 @@ header {
       display: flex;
       position: static;
       bottom: 65px;
-      border-top: 1px solid white;
+      border-top: 0.5px solid white;
       margin-top: 240px;
       width: 100%;
 

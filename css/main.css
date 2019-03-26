@@ -91,11 +91,37 @@
 
 header {
   background: white;
-  height: 20vh;
+  height: 22vh;
 }
 
 header a {
   color: #223A6F;
+}
+
+header .menu-btn {
+  position: relative;
+  left: 2px;
+  top: 4px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+header .menu-btn .btn-line {
+  width: 28px;
+  height: 1.5px;
+  margin: 0 0 6px 0;
+  background: #223A6F;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+header .menu-btn .btn-line.side {
+  background: white;
+}
+
+header .menu-btn .btn-line:last-child {
+  width: 20px;
 }
 
 header .bgnav {
@@ -106,30 +132,31 @@ header .bgnav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 37px;
+  height: 36px;
   width: 100%;
 }
 
 header .bgnav a, header .bgnav i {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   margin: 0;
-  margin-top: 3px;
+  letter-spacing: 2px;
+  margin-top: 4px;
 }
 
 header .bgnav a .fal, header .bgnav i .fal {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-right: 5px;
 }
 
 header .bgnav a .fa-whatsapp, header .bgnav i .fa-whatsapp {
   color: #4FCE5D;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-right: 5px;
 }
 
 header .bgnav .bgnav_space {
-  width: 19%;
+  width: 47vh;
 }
 
 header .bgnav .bgnav_span {
@@ -155,7 +182,7 @@ header .menu {
 
 header .menu .licorera_logo {
   position: relative;
-  left: 85px;
+  left: 103px;
   margin: 5px 0;
 }
 
@@ -163,9 +190,14 @@ header .menu .menu-left li:last-child {
   display: none;
 }
 
+header .menu .menu-left {
+  position: relative;
+  top: -10px;
+}
+
 header .menu .menu-left .open-slide {
   position: relative;
-  top: 5px;
+  top: 21px;
   margin-right: 10px;
 }
 
@@ -176,30 +208,12 @@ header .menu .menu-left .open-slide .menu_title {
   left: 0px;
 }
 
-header .menu .menu-left .open-slide .menu-btn {
-  position: relative;
-  left: -4px;
-  top: 4px;
-  cursor: pointer;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-
-header .menu .menu-left .open-slide .menu-btn .btn-line {
-  width: 28px;
-  height: 1.5px;
-  margin: 0 0 6px 0;
-  background: #223A6F;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-
-header .menu .menu-left .open-slide .menu-btn .btn-line:last-child {
-  width: 20px;
-}
-
 header .menu .menu-right .fal {
   margin-left: 10px;
+}
+
+header .menu .menu-right .menu_title--right {
+  display: none;
 }
 
 header .menu ul {
@@ -230,7 +244,7 @@ header .menu ul ._user {
 header .menu ul .bar {
   content: '';
   position: relative;
-  width: 0.6px;
+  width: .6px;
   height: 18px;
   top: 4px;
   background-color: #223A6F;
@@ -238,20 +252,23 @@ header .menu ul .bar {
 
 .side-nav {
   height: 100%;
-  width: 0;
+  width: 25vw;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
-  opacity: 0.8;
-  overflow-y: auto;
+  background-color: #303030;
+  opacity: 0.9;
+  overflow: hidden;
+  display: none;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 
 .side-nav .side-menu-ul ul {
   display: none;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .side-nav ul {
@@ -259,33 +276,48 @@ header .menu ul .bar {
   margin: 0;
 }
 
+.side-nav ul.products {
+  padding: 0 1em;
+}
+
+.side-nav .middle_hr {
+  width: 85%;
+}
+
 .side-nav a {
   padding: 10px 10px 10px 30px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1em;
   color: #ccc;
   display: block;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 
-.side-nav a .fa-chevron-right {
-  float: right;
+.side-nav a.--btn {
+  border: none;
 }
 
-.side-nav a .fa-chevron-down {
+.side-nav a .fa-chevron-right, .side-nav a .fa-chevron-down, .side-nav a .fa-chevron-up {
+  position: relative;
   float: right;
+  right: 20px;
 }
 
-.side-nav a:not(.btn-close) {
-  border-bottom: 2px solid;
-  height: 12px;
+.side-nav a.line_buttom {
+  border-bottom: .5px solid gray;
+}
+
+.side-nav a:not(.btn-close):not(.btn_menu) {
+  height: 18px;
+  padding-left: 2vw;
 }
 
 .side-nav a.list {
   border: none;
   font-size: 0.8rem;
   padding: 2px 40px;
+  text-decoration: underline;
 }
 
 .side-nav a.list.--right {
@@ -309,7 +341,7 @@ header .menu ul .bar {
 }
 
 .side-nav .location ul a {
-  font-size: 15px;
+  font-size: 1.1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,6 +354,26 @@ header .menu ul .bar {
           align-items: flex-end;
 }
 
+.side-nav .location ul a.-last {
+  border-bottom: 0;
+}
+
+.side-nav .location ul a.-first {
+  border: none;
+}
+
+.side-nav .location .location-block {
+  position: relative;
+  right: 50px;
+}
+
+.side-nav .location .location-block .line-btn {
+  border-bottom: solid 1px gray;
+  width: 70%;
+  position: relative;
+  left: 84px;
+}
+
 .side-nav .side-menu__login {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -329,19 +381,41 @@ header .menu ul .bar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-right: 20px;
-  margin-top: 8px;
+  padding-right: 1vw;
+  padding-top: 20px;
 }
 
-.side-nav .side-menu__login p
-li {
+.side-nav .side-menu__login li {
   color: white;
-  font-size: 12px;
+  font-size: 1em;
+  position: relative;
+  top: 4px;
+}
+
+.side-nav .side-menu__login .bar {
+  content: '';
+  position: relative;
+  width: 1.6px;
+  height: 18px;
+  top: 15px;
+  left: 11px;
+  background-color: white;
+}
+
+.side-nav .side-menu__login .menu_title {
+  position: relative;
+}
+
+.side-nav .side-menu__login .fal {
+  position: relative;
+  left: -7px;
+  font-size: 2em;
 }
 
 .side-nav .btn-close {
-  display: -moz-inline-grid;
   font-size: 12px;
+  position: relative;
+  left: 9px;
 }
 
 .side-nav .side-menu__bottom {
@@ -350,7 +424,7 @@ li {
   display: flex;
   position: static;
   bottom: 65px;
-  border-top: 1px solid white;
+  border-top: 0.5px solid white;
   margin-top: 240px;
   width: 100%;
 }
@@ -835,10 +909,15 @@ ul {
 h1, h2, h3, h4, h5, h6 {
   font-family: Source Sans Pro;
   font-weight: bold;
+  margin: 0;
 }
 
 .banner {
   height: 65vh;
+}
+
+.banner img {
+  height: 100%;
 }
 
 .banner_bottom {
@@ -851,12 +930,45 @@ main {
   margin: 0 auto -50px;
 }
 
-@media (min-width: 320px) and (max-width: 390px) {
-  header .menu .menu-left, header .menu .menu-right {
+@media screen and (max-width: 420px) {
+  header {
+    height: 15vh;
+  }
+  header img.licorera_logo {
+    width: 139px;
+  }
+  header .bgnav a {
+    font-size: 0.7rem;
+  }
+  header .menu {
+    position: relative;
+    top: 13px;
+  }
+  header .menu .menu-left li.open-slide {
+    left: 15px;
+  }
+  header .menu ul > li.bar_li {
+    display: none;
+  }
+  header .menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 1px;
+    position: relative;
+    left: -10px;
+  }
+  header .menu ul .fal {
+    font-size: 1.4rem;
+    top: 6px;
+  }
+  header .menu .menu-right .menu_title--right {
+    font-size: 0.9rem;
+  }
+  .banner {
+    height: 55vh;
+  }
+  .banner_bottom {
+    height: 28vh;
   }
 }
 
@@ -868,34 +980,53 @@ main {
     display: none;
   }
   header {
-    padding: 0 3px;
-    height: 18vh;
+    padding: 0;
+    height: 17vh;
+  }
+  header .side-nav {
+    width: 66vw;
   }
   header a.list.--right {
     float: none;
   }
-  header .side-nav .side-menu__bottom {
-    margin-top: 250px;
-  }
-  header nav.menu {
+  header .menu {
     padding: 0;
   }
-  header nav.menu .menu-left li:last-child {
+  header .menu .menu-left li:last-child {
     display: inline-block;
   }
-  header nav.menu .menu-left .fa-user-circle, header nav.menu .menu-left .bar {
+  header .menu .bar {
     display: none;
   }
-  header nav.menu .menu-left .open-slide {
+  header .menu .menu-left {
     top: 0;
   }
-  header nav.menu .menu_title--left {
+  header .menu .menu-left .fa-user-circle, header .menu .menu-left .bar {
+    display: none;
+  }
+  header .menu .menu-left .open-slide {
+    top: 4px;
+    left: 21px;
+  }
+  header .menu .menu-left .menu_title {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  header nav.menu .licorera_logo {
+  header .menu .menu-left .titleMenu {
+    font-size: 0.8em;
+    position: relative;
+    top: -5px;
+  }
+  header .menu .menu-right .menu_title--right {
+    display: block;
+  }
+  header .menu .menu_title--left {
+    position: relative;
+    display: none;
+  }
+  header .menu .licorera_logo {
     max-width: 150px;
     margin-top: 5px;
     left: 0;
@@ -961,8 +1092,8 @@ main {
   .menu-right li:first-child {
     display: none;
   }
-  .banner img {
-    height: 65vh;
+  .banner {
+    height: 60vh;
   }
   .banner_bottom {
     height: 17vh;
@@ -974,22 +1105,51 @@ main {
   header a.list.--right {
     float: none;
   }
+  header .side-nav {
+    width: 33vw;
+  }
+  header .side-menu {
+    width: 250px;
+  }
   header .side-nav .side-menu__bottom {
     margin-top: 240px;
   }
-  header nav.menu .menu-left li:last-child {
+  header .menu .menu-left li:last-child {
     display: inline-block;
   }
-  header nav.menu .menu-left .fa-user-circle {
+  header .menu .bar {
     display: none;
   }
-  header nav.menu .menu_title--left {
+  header .menu .menu-left {
+    top: 0;
+  }
+  header .menu .menu-left .fa-user-circle {
+    display: none;
+  }
+  header .menu .menu-left .menu_title {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  header nav.menu .licorera_logo {
+  header .menu .menu-left .titleMenu {
+    font-size: 0.8em;
+    position: relative;
+    top: -5px;
+  }
+  header .menu .menu-left .open-slide {
+    top: 6px;
+  }
+  header .menu .menu_title--left {
+    display: none;
+  }
+  header .menu .menu-right .menu_title--right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  header .menu .licorera_logo {
     width: 170px;
     margin-top: 2px;
     left: 0;
@@ -1036,13 +1196,57 @@ main {
     display: none;
   }
   .bgnav_space {
-    width: 30%;
+    width: 22   0px;
   }
 }
 
 @media only screen and (min-width: 1870px) and (max-width: 2560px) {
   header {
-    height: 18vh;
+    height: 7vmax;
+  }
+  header .bgnav .bgnav_space {
+    width: 20.5vw;
+  }
+  header .bgnav {
+    height: 39px;
+  }
+  header .bgnav a {
+    font-size: 1.6rem;
+    margin-top: 4px;
+  }
+  header .menu ul a {
+    font-size: 2em;
+  }
+  header .menu ul .fal {
+    font-size: 2rem;
+  }
+  header .menu span.menu-title {
+    font-size: 2rem;
+  }
+  header .menu img.licorera_logo {
+    left: 184px;
+    width: 12vmax;
+  }
+  header .menu .menu-left {
+    position: relative;
+    left: 50px;
+  }
+  .banner {
+    height: 73vh;
+  }
+  .side-nav .location .location-block .line-btn {
+    width: 21.2vmax;
+  }
+  .side-nav .side-menu__login {
+    margin-top: 2.3vh;
+    padding-left: 2vw;
+  }
+  .side-nav .side-menu__login .bar {
+    left: -2.2vw;
+  }
+  .side-nav .side-menu__login .fal {
+    left: -5vw;
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
